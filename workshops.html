@@ -595,7 +595,8 @@
     <div class="modal">
       <button class="modal-x" aria-label="Close">✕</button>
       <div class="modal-h" id="bookingModalTitle">Book a Session</div>
-      <div class="modal-sub">Choose your counselor and preferred time below.</div>
+      <div class="modal-sub">Fill out the form below and we'll be in touch to confirm
+      your appointment.</div>
       <div class="fg">
         <label>Your Name</label>
         <div class="fg-row">
@@ -605,19 +606,7 @@
       </div>
       <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" autocomplete="email"></div>
       <div class="fg"><label>Phone</label><input type="tel" placeholder="(816) 000-0000" autocomplete="tel"></div>
-      <div class="fg">
-        <label>Select Specialist</label>
-        <select>
-          <option value="">Choose a specialist...</option>
-          <option>Tanise Smith, MS, LCPC</option>
-          <option>Natasha Harris-Butler, LCSW</option>
-          <option>Debra Richardson, LSCSW</option>
-          <option>Chris Gudjenov, LPC</option>
-          <option>Cynthia Stokes, LCC</option>
-          <option>Jonathan Slade, B.Th.</option>
-          <option>No preference</option>
-        </select>
-      </div>
+
       <div class="fg">
         <label>Service Type</label>
         <select>
@@ -648,7 +637,7 @@
     <div class="modal">
       <button class="modal-x" onclick="document.getElementById('connectedModal').classList.remove('open');document.body.style.overflow=''">✕</button>
       <div class="modal-h">Reserve Your Spot</div>
-      <div class="modal-sub">Connected: Strengthening the Mother-Daughter Bond<br>March 28 – April 18 · 11:00 AM–12:30 PM · $320 per pair</div>
+      <div class="modal-sub">Connected: Strengthening the Mother-Daughter Bond<br>March 28 – April 18 · 11:00 AM–12:30 PM · $65 per pair</div>
       <form name="workshop-connected" netlify netlify-honeypot="bot-field" id="connectedForm">
         <input type="hidden" name="form-name" value="workshop-connected">
         <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
