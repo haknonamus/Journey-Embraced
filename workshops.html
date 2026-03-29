@@ -484,6 +484,50 @@
     </div>
   </section>
 
+  <!-- ══ WORKSHOP 3: RECOVER WELL MENTAL RECOVERY ══ -->
+  <section class="workshop-feature" <!--style="background:#f4f1f8-->;">
+    <div class="workshop-feature-inner">
+
+      <div class="workshop-flyer-wrap reveal">
+        <img src="images/mental-recovery.png" alt="Recover Well Series: Mental Recovery and Return to Sport Flyer">
+      </div>
+
+      <div class="workshop-cta-block reveal">
+        <div class="section-label">Now Enrolling</div>
+        <h2>Mental Recovery & <em>Return to Sport</em></h2>
+        <p>A specialized workshop for high school athletes navigating the psychological challenges of injury. This session focuses on rebuilding confidence, managing the emotional toll of being sidelined, and preparing for a resilient return to the game.</p>
+
+        <div class="workshop-details">
+          <div class="workshop-detail-chip">
+            <strong>Dates</strong>
+            Apr 20 · Apr 27 · May 4<br>May 11 · May 18 · May 25
+          </div>
+          <div class="workshop-detail-chip">
+            <strong>Times</strong>
+            6:30 PM – 8:00 PM
+          </div>
+          <div class="workshop-detail-chip">
+            <strong>Location</strong>
+            12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
+          </div>
+          <div class="workshop-detail-chip">
+            <strong>Investment</strong>
+            $45 per session
+          </div>
+        </div>
+
+        <div style="margin-top:40px;">
+          <button class="btn-register" onclick="document.getElementById('mentalModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
+        </div>
+
+        <p style="margin-top:20px;font-size:.85rem;color:#888;">
+          Facilitated by Chris Gudjenov, MS, LPC
+        </p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ══ CLIENT TESTIMONIALS ══ -->
   <section class="testimonial-carousel">
     <div class="section-label section-label--center">Client Stories</div>
@@ -702,6 +746,60 @@
       </div>
     </div>
   </div>
+
+  <!-- ══ WORKSHOP MODAL 3: MENTAL RECOVERY & RETURN TO SPORT ══ -->
+  <div class="modal-overlay" id="mentalModal" role="dialog" aria-modal="true">
+      <div class="modal">
+        <button class="modal-x" onclick="document.getElementById('mentalModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+        <div class="modal-h">Reserve Your Spot</div>
+        <div class="modal-sub">Mental Recovery & Return to Sport<br>Mondays: Apr 20 – May 25 · 6:30 PM · $45 per session</div>
+
+        <form name="workshop-mental-recovery" netlify netlify-honeypot="bot-field" id="mentalForm">
+          <input type="hidden" name="form-name" value="workshop-mental-recovery">
+          <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+          <div class="fg">
+            <label>Your Name</label>
+            <div class="fg-row">
+              <input type="text" name="first-name" placeholder="First name" required>
+              <input type="text" name="last-name" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="fg">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(816) 000-0000">
+          </div>
+
+          <div class="fg">
+            <label>Number of Athletes Attending</label>
+            <select name="attending" required>
+              <option value="">Select...</option>
+              <option value="1 athlete">1 athlete</option>
+              <option value="2 athletes">2 athletes</option>
+              <option value="3 athletes">3 athletes</option>
+            </select>
+          </div>
+
+          <div class="fg">
+            <label>Message (Optional)</label>
+            <textarea name="message" placeholder="Optional: Tell us which sport or injury you're recovering from..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-modal">Reserve My Spot</button>
+        </form>
+
+        <div id="mentalSuccess" class="modal-success" style="display:none;">
+          <div class="success-icon">&#10003;</div>
+          <p>Thank you! Your request for Chris's workshop has been received. We will be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
 
   <script src="js/main.js"></script>
   <script>
