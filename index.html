@@ -625,19 +625,26 @@
                     </div>
                     <div class="counselor-bio">
                         <p>
-                            Debra is a Kansas and Missouri Licensed Clinical
-                            Social Worker and Psychotherapist with over 30 years
-                            of experience in social work and mental health.
-                            Throughout her career, she has served individuals
-                            and families in a variety of clinical settings and
-                            remains deeply committed to helping others move
-                            toward healing and wellness.
+                            Debra Richardson is a Kansas and Missouri Licensed
+                            Clinical Social Worker and Psychotherapist with over
+                            30 years of experience in social work and mental
+                            health. She provides compassionate, grounded support
+                            to individuals navigating life transitions, with a
+                            special focus on women in midlife.
                         </p>
                         <p>
-                            Debra views therapy as a guided conversation that
-                            creates space for growth, clarity, and meaningful
-                            change. Her approach is interactive, conversational,
-                            and grounded in Cognitive Behavioral Therapy (CBT).
+                            Debra helps clients manage challenges related to
+                            perimenopause and menopause, empty nest transitions,
+                            caring for aging parents, relationship strain,
+                            grief, and anxiety or depression in high-functioning
+                            adults. She also works with men experiencing anger
+                            concerns, supporting them in developing healthier
+                            coping strategies and stronger relational skills.
+                        </p>
+                        <p>
+                            Known for her steady and supportive approach, Debra
+                            creates a space where clients feel heard,
+                            understood, and empowered.
                         </p>
                         <p>
                             <em
@@ -1143,28 +1150,6 @@
             </div>
         </div>
         <script src="js/main.js"></script>
-        <script>
-            (function () {
-                var slides = document.querySelectorAll(".test-slide");
-                var dots = document.querySelectorAll(".test-dot");
-                var cur = 0;
-                function goTo(n) {
-                    slides[cur].classList.remove("active");
-                    dots[cur].classList.remove("active");
-                    cur = n;
-                    slides[cur].classList.add("active");
-                    dots[cur].classList.add("active");
-                }
-                dots.forEach(function (d) {
-                    d.addEventListener("click", function () {
-                        goTo(+d.getAttribute("data-index"));
-                    });
-                });
-                if (slides.length)
-                    setInterval(function () {
-                        goTo((cur + 1) % slides.length);
-                    }, 5000);
-            })();
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
