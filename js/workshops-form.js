@@ -60,12 +60,11 @@
         });
     });
   }
-  bindForm(
-    "connectedForm",
-    "connectedSuccess",
-    "connectedModal",
-    "Reserve My Spot",
-  );
+  bindForm("connectedForm", "connectedSuccess", "connectedModal", "Reserve My Spot");
+
   bindForm("recoverForm", "recoverSuccess", "recoverModal", "Reserve My Spot");
+
   bindForm("mentalForm", "mentalSuccess", "mentalModal", "Reserve My Spot");
+
+  bindForm("anchoredForm", "anchoredSuccess", "anchoredModal", "Reserve My Spot");
 })();
