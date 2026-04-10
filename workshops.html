@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/workshops.css">
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
 
@@ -33,46 +34,59 @@
         </button>
         <div class="mega-drop" role="menu">
           <a class="drop-card" href="index.html#tanise" role="menuitem">
-            <img class="drop-thumb" src="images/tanise.jpg" alt="Tanise Smith">
+            <img class="drop-thumb" src="images/profile/tanise.jpg" alt="Tanise Smith">
             <div class="drop-info">
               <div class="drop-name">Tanise Smith</div>
               <div class="drop-role">MS, LCPC · Founder</div>
             </div>
           </a>
           <a class="drop-card" href="index.html#natasha" role="menuitem">
-            <img class="drop-thumb" src="images/natasha.jpg" alt="Natasha Harris-Butler">
+            <img class="drop-thumb" src="images/profile/natasha.jpg" alt="Natasha Harris-Butler">
             <div class="drop-info">
               <div class="drop-name">Natasha Harris-Butler</div>
               <div class="drop-role">LCSW, LSCSW</div>
             </div>
           </a>
           <a class="drop-card" href="index.html#debra" role="menuitem">
-            <img class="drop-thumb" src="images/debra.jpg" alt="Debra Richardson">
+            <img class="drop-thumb" src="images/profile/debra.jpg" alt="Debra Richardson">
             <div class="drop-info">
               <div class="drop-name">Debra Richardson</div>
               <div class="drop-role">LSCSW, LCSW</div>
             </div>
           </a>
           <a class="drop-card" href="index.html#chris" role="menuitem">
-            <img class="drop-thumb" src="images/chris.jpg" alt="Chris Gudjenov">
+            <img class="drop-thumb" src="images/profile/chris.jpg" alt="Chris Gudjenov">
             <div class="drop-info">
               <div class="drop-name">Chris Gudjenov</div>
               <div class="drop-role">LPC · Athletes & Men</div>
             </div>
           </a>
           <a class="drop-card" href="index.html#cynthia" role="menuitem">
-            <img class="drop-thumb" src="images/cynthia.jpg" alt="Cynthia Stokes">
+            <img class="drop-thumb" src="images/profile/cynthia.jpg" alt="Cynthia Stokes">
             <div class="drop-info">
               <div class="drop-name">Cynthia Stokes</div>
               <div class="drop-role">LCC · Life Coach</div>
             </div>
           </a>
           <a class="drop-card" href="index.html#jonathan" role="menuitem">
-            <img class="drop-thumb" src="images/jonathan.jpg" alt="Jonathan Slade">
+            <img class="drop-thumb" src="images/profile/jonathan.jpg" alt="Jonathan Slade">
             <div class="drop-info">
               <div class="drop-name">Jonathan Slade</div>
               <div class="drop-role">B.Th. · Pastoral Coach</div>
             </div>
+          </a>
+          <a class="drop-card" href="#adrian" role="menuitem">
+              <img
+                  class="drop-thumb"
+                  src="images/profile/adrian.jpg"
+                  alt="Adrian Smith"
+              />
+              <div class="drop-info">
+                  <div class="drop-name">Adrian Smith</div>
+                  <div class="drop-role">
+                      Insurance & Billing Specialist
+                  </div>
+              </div>
           </a>
         </div>
       </div>
@@ -97,13 +111,19 @@
           </div>
         </div>
       </div>
+      <!-- == Stripe Donate Link == -->
+      <div class="nav-item utility-sep">
+          <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="nav-link-utility"
+              >Donate</a
+          >
+      </div>
     </div>
 
     <div class="nav-right">
-<a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
-      <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
+        <a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
+        <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
-      </button>
+        </button>
     </div>
   </nav>
 
@@ -116,7 +136,8 @@
     <a href="index.html#services">Services</a>
     <a href="workshops.html">Workshops</a>
     <a href="blog.html">Blog</a>
-<a href="#" id="mobBook" class="mob-book-link">Book Now</a>
+    <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
+    <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
   </div>
 
   <!-- ══ REGISTRATION OPEN BANNER ══ -->
@@ -136,7 +157,7 @@
     <div class="workshop-feature-inner">
 
       <div class="workshop-flyer-wrap reveal">
-        <img src="images/flyer.png" alt="Connected: Strengthening the Mother-Daughter Bond — 4-Part Small Group Experience Flyer">
+        <img src="images/workshop/flyer.png" alt="Connected: Strengthening the Mother-Daughter Bond — 4-Part Small Group Experience Flyer">
       </div>
 
       <div class="workshop-cta-block reveal">
@@ -180,7 +201,7 @@
     <div class="workshop-feature-inner">
 
       <div class="workshop-flyer-wrap reveal">
-        <img src="images/flyer-recover-well.png" alt="Recover Well: Narcissistic Abuse Recovery Group Flyer">
+        <img src="images/workshop/flyer-recover-well.png" alt="Recover Well: Narcissistic Abuse Recovery Group Flyer">
       </div>
 
       <div class="workshop-cta-block reveal">
@@ -191,11 +212,11 @@
         <div class="workshop-details">
           <div class="workshop-detail-chip">
             <strong>Dates</strong>
-            Mar 14 · Mar 21<br>Mar 28 · Apr 4
+            April 22 · May 6<br>May 20 · June 3
           </div>
           <div class="workshop-detail-chip">
             <strong>Times</strong>
-            Group 1: 9:00a – 10:30a<br>Group 2: 1:00p – 2:30p
+            6:00 pm – 7:30 pm
           </div>
           <div class="workshop-detail-chip">
             <strong>Location</strong>
@@ -224,7 +245,7 @@
     <div class="workshop-feature-inner">
 
       <div class="workshop-flyer-wrap reveal">
-        <img src="images/mental-recovery.png" alt="Recover Well Series: Mental Recovery and Return to Sport Flyer">
+        <img src="images/workshop/mental-recovery.png" alt="Recover Well Series: Mental Recovery and Return to Sport Flyer">
       </div>
 
       <div class="workshop-cta-block reveal">
@@ -250,18 +271,59 @@
             $45 per session
           </div>
         </div>
-
         <div style="margin-top:40px;">
           <button class="btn-register" onclick="document.getElementById('mentalModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
         </div>
-
         <p style="margin-top:20px;font-size:.85rem;color:#888;">
           Facilitated by Chris Gudjenov, MS, LPC
         </p>
       </div>
-
     </div>
   </section>
+
+  <!-- == Workshop 4: Anchored by Grace == -->
+  <section class="workshop-feature" style="background:#f4f1f8;">
+      <div class="workshop-feature-inner">
+
+        <div class="workshop-flyer-wrap reveal">
+          <img src="images/workshop/anchored-group.png" alt="Anchored by Grace: Divorce Healing & Support Group Flyer">
+        </div>
+
+        <div class="workshop-cta-block reveal">
+          <div class="section-label">Now Enrolling</div>
+          <h2>Anchored by <em>Grace</em></h2>
+          <p>A faith-based 4-week support group for women navigating the challenges of separation or divorce. Together, we create a safe, confidential space to reflect and rebuild—emotionally and spiritually. Registration includes the book <em>"Anchored by Grace: Prayers for Keeping an Undivided Heart After Divorce"</em>.</p>
+
+          <div class="workshop-details">
+            <div class="workshop-detail-chip">
+              <strong>Start Dates</strong>
+              May 1 · May 15<br>May 29 · June 12
+            </div>
+            <div class="workshop-detail-chip">
+              <strong>Time</strong>
+              6:30 PM (60-90 Min)
+            </div>
+            <div class="workshop-detail-chip">
+              <strong>Location</strong>
+              12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+            </div>
+            <div class="workshop-detail-chip">
+              <strong>Investment</strong>
+              $55 per session
+            </div>
+          </div>
+
+          <div style="margin-top:40px;">
+            <button class="btn-register" onclick="document.getElementById('anchoredModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
+          </div>
+
+          <p style="margin-top:20px;font-size:.85rem;color:#888;">
+            Facilitated by Natasha Harris-Butler, LCSW, LSCSW
+          </p>
+        </div>
+
+      </div>
+    </section>
 
   <!-- ══ CLIENT TESTIMONIALS ══ -->
   <section class="testimonial-carousel">
@@ -315,29 +377,28 @@
     <p>We regularly host community workshops and therapeutic groups. Follow us on Facebook or reach out to be notified about upcoming events.</p>
   </section>
 
-  <!-- == Scholarship Fund == -->
+  <!-- == Stripe Donation Button == -->
   <section class="scholarship-section">
       <div class="scholarship-card">
           <div class="scholarship-info">
               <span class="section-label" style="color: #00d4a8"
                   >Community Care</span
               >
-              <h2>The Scholarship Fund</h2>
+              <h2>Give the Gift of Therapy</h2>
               <p>
-                  Your contribution directly helps individuals and
-                  families in financial hardship access professional care.
+                  Your support makes mental health care more accessible for individuals and families facing financial barriers.
               </p>
           </div>
+
           <div class="scholarship-action">
-              <p>
-                  We believe financial barriers should never stand in the
-                  way of healing. 100% of your donation subsidizes therapy
-                  and life coaching for those who cannot afford full-fee
-                  services.
-              </p>
-              <a href="YOUR_LINK_HERE" class="donation-btn"
-                  >Donate to the Fund</a
-              >
+
+              <div class="nav-item utility-sep">
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1TJOlEQ30MbEiVYD1q9aeBsh"
+                    publishable-key="pk_live_51THLuFQ30MbEiVYDJyJKlRv8Hxj7cSFNbekG5AwiBlGXWV8YEZuY9AECkcZIDdcS6FUB5wIX4rwpghBJEgdoGiBY00SK1fusFa"
+                  >
+                  </stripe-buy-button>
+              </div>
           </div>
       </div>
   </section>
@@ -473,7 +534,7 @@
     <div class="modal">
       <button class="modal-x" onclick="document.getElementById('recoverModal').classList.remove('open');document.body.style.overflow=''">✕</button>
       <div class="modal-h">Reserve Your Spot</div>
-      <div class="modal-sub">Recover Well: Narcissistic Abuse Recovery Group<br>Mar 14 – Apr 4 · $45 per session</div>
+      <div class="modal-sub">Recover Well: Narcissistic Abuse Recovery Group<br>Apr 22 – June 3 · $45 per session</div>
       <form name="workshop-recover-well" netlify netlify-honeypot="bot-field" id="recoverForm">
         <input type="hidden" name="form-name" value="workshop-recover-well">
         <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
@@ -483,6 +544,7 @@
         </div></div>
         <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
         <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"></div>
+        <!-- == Comment Out or Uncomment as needed
         <div class="fg"><label>Preferred Time Slot</label>
           <select name="time-slot" required>
             <option value="">Select a time slot...</option>
@@ -490,6 +552,7 @@
             <option value="Group 2: 1:00 PM - 2:30 PM">Group 2: 1:00 PM - 2:30 PM</option>
           </select>
         </div>
+        -->
         <div class="fg"><label>Number Attending</label>
           <select name="attending">
             <option value="">Select...</option>
@@ -561,6 +624,61 @@
         </div>
       </div>
     </div>
+
+    <!-- == Workshop Modal 4: Anchored by Grace == -->
+    <div class="modal-overlay" id="anchoredModal" role="dialog" aria-modal="true">
+        <div class="modal">
+          <button class="modal-x" onclick="document.getElementById('anchoredModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+          <div class="modal-h">Reserve Your Spot</div>
+          <div class="modal-sub">Anchored by Grace: Divorce Healing & Support Group<br>May 1st – June 12th · 6:30 PM · $55 per session</div>
+
+          <form name="workshop-anchored-by-grace" netlify netlify-honeypot="bot-field" id="anchoredForm">
+            <input type="hidden" name="form-name" value="workshop-anchored-by-grace">
+            <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+            <div class="fg">
+              <label>Your Name</label>
+              <div class="fg-row">
+                <input type="text" name="first-name" placeholder="First name" required>
+                <input type="text" name="last-name" placeholder="Last name" required>
+              </div>
+            </div>
+
+            <div class="fg">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="fg">
+              <label>Phone</label>
+              <input type="tel" name="phone" placeholder="(816) 000-0000">
+            </div>
+
+            <div class="fg">
+              <label>Select Your Start Date</label>
+              <select name="start-date" required>
+                <option value="">Select a date...</option>
+                <option value="May 1st">May 1st</option>
+                <option value="May 15th">May 15th</option>
+                <option value="May 29th">May 29th</option>
+                <option value="June 12th">June 12th</option>
+              </select>
+            </div>
+
+            <div class="fg">
+              <label>Message (Optional)</label>
+              <textarea name="message" placeholder="Any questions or notes for Natasha..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-modal">Reserve My Spot</button>
+          </form>
+
+          <div id="anchoredSuccess" class="modal-success" style="display:none;">
+            <div class="success-icon">&#10003;</div>
+            <p>Thank you! Your request for the Anchored by Grace group has been received. We will be in touch shortly.</p>
+          </div>
+        </div>
+      </div>
 
   <script src="js/main.js"></script>
   <script src="js/workshops-form.js"></script>
