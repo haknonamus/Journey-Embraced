@@ -1,550 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Community Workshops — Journey Embraced Counseling LLC. Connected: Strengthening the Mother-Daughter Bond. A 4-part small group experience.">
-  <title>Community Workshops | Journey Embraced Counseling LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/workshops.css">
-  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Community Workshops — Journey Embraced Counseling LLC. Connected: Strengthening the Mother-Daughter Bond. A 4-part small group experience.">
+    <title>Community Workshops | Journey Embraced Counseling LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/workshops.css">
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
+
 <body>
 
-  <!-- ══ NAVIGATION ══ -->
-  <nav id="mainNav">
-    <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="Journey Embraced Counseling">
-    </a>
+    <!-- ══ NAVIGATION ══ -->
+    <nav id="mainNav">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="Journey Embraced Counseling">
+        </a>
 
-    <div class="nav-center">
-      <div class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="index.html#about" class="nav-link">About</a>
-      </div>
-      <div class="nav-item">
-        <button class="nav-link" id="teamDropBtn" aria-expanded="false" aria-haspopup="true">
-          Our Team
-          <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0l5 6 5-6z"/></svg>
-        </button>
-        <div class="mega-drop" role="menu">
-          <a class="drop-card" href="index.html#tanise" role="menuitem">
-            <img class="drop-thumb" src="images/profile/tanise.jpg" alt="Tanise Smith">
-            <div class="drop-info">
-              <div class="drop-name">Tanise Smith</div>
-              <div class="drop-role">MS, LCPC · Founder</div>
+        <div class="nav-center">
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
             </div>
-          </a>
-          <a class="drop-card" href="index.html#natasha" role="menuitem">
-            <img class="drop-thumb" src="images/profile/natasha.jpg" alt="Natasha Harris-Butler">
-            <div class="drop-info">
-              <div class="drop-name">Natasha Harris-Butler</div>
-              <div class="drop-role">LCSW, LSCSW</div>
+            <div class="nav-item">
+                <a href="index.html#about" class="nav-link">About</a>
             </div>
-          </a>
-          <a class="drop-card" href="index.html#debra" role="menuitem">
-            <img class="drop-thumb" src="images/profile/debra.jpg" alt="Debra Richardson">
-            <div class="drop-info">
-              <div class="drop-name">Debra Richardson</div>
-              <div class="drop-role">LSCSW, LCSW</div>
+            <div class="nav-item">
+                <button class="nav-link" id="teamDropBtn" aria-expanded="false" aria-haspopup="true">
+                    Our Team
+                    <svg viewBox="0 0 10 6" aria-hidden="true">
+                        <path d="M0 0l5 6 5-6z" />
+                    </svg>
+                </button>
+                <div class="mega-drop" role="menu">
+                    <a class="drop-card" href="index.html#tanise" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/tanise.jpg" alt="Tanise Smith">
+                        <div class="drop-info">
+                            <div class="drop-name">Tanise Smith</div>
+                            <div class="drop-role">MS, LCPC · Founder</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#natasha" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/natasha.jpg" alt="Natasha Harris-Butler">
+                        <div class="drop-info">
+                            <div class="drop-name">Natasha Harris-Butler</div>
+                            <div class="drop-role">LCSW, LSCSW</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#debra" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/debra.jpg" alt="Debra Richardson">
+                        <div class="drop-info">
+                            <div class="drop-name">Debra Richardson</div>
+                            <div class="drop-role">LSCSW, LCSW</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#chris" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/chris.jpg" alt="Chris Gudjenov">
+                        <div class="drop-info">
+                            <div class="drop-name">Chris Gudjenov</div>
+                            <div class="drop-role">LPC · Athletes & Men</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#brie" role="menuitem"><img class="drop-thumb"
+                            src="images/profile/brie.jpg" alt="Brie Byers" />
+                        <div class="drop-info">
+                            <div class="drop-name">Brie Byers</div>
+                            <div class="drop-role">MS, LPC</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#cynthia" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/cynthia.jpg" alt="Cynthia Stokes">
+                        <div class="drop-info">
+                            <div class="drop-name">Cynthia Stokes</div>
+                            <div class="drop-role">LCC · Life Coach</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="index.html#jonathan" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/jonathan.jpg" alt="Jonathan Slade">
+                        <div class="drop-info">
+                            <div class="drop-name">Jonathan Slade</div>
+                            <div class="drop-role">B.Th. · Pastoral Coach</div>
+                        </div>
+                    </a>
+                    <a class="drop-card" href="#adrian" role="menuitem">
+                        <img class="drop-thumb" src="images/profile/adrian.jpg" alt="Adrian Smith" />
+                        <div class="drop-info">
+                            <div class="drop-name">Adrian Smith</div>
+                            <div class="drop-role">
+                                Insurance & Billing Specialist
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </a>
-          <a class="drop-card" href="index.html#chris" role="menuitem">
-            <img class="drop-thumb" src="images/profile/chris.jpg" alt="Chris Gudjenov">
-            <div class="drop-info">
-              <div class="drop-name">Chris Gudjenov</div>
-              <div class="drop-role">LPC · Athletes & Men</div>
+            <div class="nav-item"><a href="index.html#services" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="workshops.html" class="nav-link">Workshops</a></div>
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
             </div>
-          </a>
-          <a class="drop-card" href="index.html#cynthia" role="menuitem">
-            <img class="drop-thumb" src="images/profile/cynthia.jpg" alt="Cynthia Stokes">
-            <div class="drop-info">
-              <div class="drop-name">Cynthia Stokes</div>
-              <div class="drop-role">LCC · Life Coach</div>
+            <div class="nav-item" style="position:relative;">
+                <button class="nav-link" id="contactDropBtn" aria-expanded="false">
+                    Contact Us
+                    <svg viewBox="0 0 10 6" aria-hidden="true">
+                        <path d="M0 0l5 6 5-6z" />
+                    </svg>
+                </button>
+                <div class="contact-drop" id="contactDrop">
+                    <div class="contact-drop-row contact-drop-row--email">
+                        <span class="contact-drop-icon">📧</span>
+                        <a href="mailto:cstokes@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
+                    </div>
+                    <div class="contact-drop-row">
+                        <span class="contact-drop-icon">📞</span>
+                        <a href="tel:8169743389">816-974-3389</a>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a class="drop-card" href="index.html#jonathan" role="menuitem">
-            <img class="drop-thumb" src="images/profile/jonathan.jpg" alt="Jonathan Slade">
-            <div class="drop-info">
-              <div class="drop-name">Jonathan Slade</div>
-              <div class="drop-role">B.Th. · Pastoral Coach</div>
+            <!-- == Stripe Donate Link == -->
+            <div class="nav-item utility-sep">
+                <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="nav-link-utility">Donate</a>
             </div>
-          </a>
-          <a class="drop-card" href="#adrian" role="menuitem">
-              <img
-                  class="drop-thumb"
-                  src="images/profile/adrian.jpg"
-                  alt="Adrian Smith"
-              />
-              <div class="drop-info">
-                  <div class="drop-name">Adrian Smith</div>
-                  <div class="drop-role">
-                      Insurance & Billing Specialist
-                  </div>
-              </div>
-          </a>
         </div>
-      </div>
-      <div class="nav-item"><a href="index.html#services" class="nav-link">Services</a></div>
-      <div class="nav-item"><a href="workshops.html" class="nav-link">Workshops</a></div>
-      <div class="nav-item">
-        <a href="blog.html" class="nav-link">Blog</a>
-      </div>
-      <div class="nav-item" style="position:relative;">
-        <button class="nav-link" id="contactDropBtn" aria-expanded="false">
-          Contact Us
-          <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0l5 6 5-6z"/></svg>
-        </button>
-        <div class="contact-drop" id="contactDrop">
-          <div class="contact-drop-row contact-drop-row--email">
-            <span class="contact-drop-icon">📧</span>
-            <a href="mailto:cstokes@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
-          </div>
-          <div class="contact-drop-row">
-            <span class="contact-drop-icon">📞</span>
-            <a href="tel:8169743389">816-974-3389</a>
-          </div>
+
+        <div class="nav-right">
+            <a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
+            <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-      </div>
-      <!-- == Stripe Donate Link == -->
-      <div class="nav-item utility-sep">
-          <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="nav-link-utility"
-              >Donate</a
-          >
-      </div>
+    </nav>
+
+    <!-- ══ MOBILE MENU ══ -->
+    <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
+        <button class="mob-close" id="mobClose" aria-label="Close menu">✕</button>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#counselors">Our Team</a>
+        <a href="index.html#services">Services</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="blog.html">Blog</a>
+        <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
+        <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
     </div>
 
-    <div class="nav-right">
-        <a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
-        <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-        </button>
+    <!-- ══ REGISTRATION OPEN BANNER ══ -->
+    <div class="reg-open-banner">
+        <span><span class="reg-open-dot"></span>Registration Now Open</span>
     </div>
-  </nav>
 
-  <!-- ══ MOBILE MENU ══ -->
-  <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
-    <button class="mob-close" id="mobClose" aria-label="Close menu">✕</button>
-    <a href="index.html">Home</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#counselors">Our Team</a>
-    <a href="index.html#services">Services</a>
-    <a href="workshops.html">Workshops</a>
-    <a href="blog.html">Blog</a>
-    <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
-    <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
-  </div>
-
-  <!-- ══ REGISTRATION OPEN BANNER ══ -->
-  <div class="reg-open-banner">
-    <span><span class="reg-open-dot"></span>Registration Now Open</span>
-  </div>
-
-  <!-- ══ HERO ══ -->
-  <section class="workshops-hero">
-    <div class="section-label section-label--center">Community Workshops</div>
-    <h1>Community Workshops &<br><em>Small Group Experiences</em></h1>
-    <p>Serving the community with intimate, facilitated spaces for healing, growth, and connection.</p>
-  </section>
-
-  <!-- ══ WORKSHOP FEATURE ══ -->
-  <section class="workshop-feature">
-    <div class="workshop-feature-inner">
-
-      <div class="workshop-flyer-wrap reveal">
-        <img src="images/workshop/flyer.png" alt="Connected: Strengthening the Mother-Daughter Bond — 4-Part Small Group Experience Flyer">
-      </div>
-
-      <div class="workshop-cta-block reveal">
-        <div class="section-label">Now Enrolling</div>
-        <h2>A space created <em>just for you</em></h2>
-        <p>Join this intimate group experience crafted specifically for mothers and daughters. Space is intentionally limited to create a safe, connected environment where real conversations can happen.</p>
-
-        <div class="workshop-details">
-          <div class="workshop-detail-chip">
-            <strong>Dates</strong>
-            March 28 · April 4<br>April 11 · April 18
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Time</strong>
-            11:00 AM – 12:30 PM
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Location</strong>
-            12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Investment</strong>
-            $65 per session
-          </div>
-        </div>
-
-        <div style="margin-top: 40px;">
-          <button class="btn-register" onclick="document.getElementById('connectedModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
-        </div>
-
-        <p style="margin-top: 20px; font-size: 0.85rem; color: #888;">
-          Facilitated by Tanise Smith, MS, LPC, LCPC &amp; Cynthia Stokes, LCC
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══ WORKSHOP 2: RECOVER WELL ══ -->
-  <section class="workshop-feature" style="background:#f4f1f8;">
-    <div class="workshop-feature-inner">
-
-      <div class="workshop-flyer-wrap reveal">
-        <img src="images/workshop/flyer-recover-well.png" alt="Recover Well: Narcissistic Abuse Recovery Group Flyer">
-      </div>
-
-      <div class="workshop-cta-block reveal">
-        <div class="section-label">Now Enrolling</div>
-        <h2>Recover Well: <em>Narcissistic Abuse Recovery Group</em></h2>
-        <p>A safe and supportive space for people healing from narcissistic and emotionally abusive relationships. This group is designed to help participants rebuild identity, restore self-worth, process trauma, and break unhealthy relational patterns.</p>
-
-        <div class="workshop-details">
-          <div class="workshop-detail-chip">
-            <strong>Dates</strong>
-            April 22 · May 6<br>May 20 · June 3
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Times</strong>
-            6:00 pm – 7:30 pm
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Location</strong>
-            12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Investment</strong>
-            $45 per session
-          </div>
-        </div>
-
-        <div style="margin-top:40px;">
-          <button class="btn-register" onclick="document.getElementById('recoverModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
-        </div>
-
-        <p style="margin-top:20px;font-size:.85rem;color:#888;">
-          Facilitated by Tanise Smith, MS, LPC, LCPC
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══ WORKSHOP 3: RECOVER WELL MENTAL RECOVERY ══ -->
-  <section class="workshop-feature" <!--style="background:#f4f1f8-->;">
-    <div class="workshop-feature-inner">
-
-      <div class="workshop-flyer-wrap reveal">
-        <img src="images/workshop/mental-recovery.png" alt="Recover Well Series: Mental Recovery and Return to Sport Flyer">
-      </div>
-
-      <div class="workshop-cta-block reveal">
-        <div class="section-label">Now Enrolling</div>
-        <h2>Mental Recovery & <em>Return to Sport</em></h2>
-        <p>A specialized workshop for high school athletes navigating the psychological challenges of injury. This session focuses on rebuilding confidence, managing the emotional toll of being sidelined, and preparing for a resilient return to the game.</p>
-
-        <div class="workshop-details">
-          <div class="workshop-detail-chip">
-            <strong>Dates</strong>
-            Apr 20 · Apr 27 · May 4<br>May 11 · May 18 · May 25
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Times</strong>
-            6:30 PM – 8:00 PM
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Location</strong>
-            12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
-          </div>
-          <div class="workshop-detail-chip">
-            <strong>Investment</strong>
-            $45 per session
-          </div>
-        </div>
-        <div style="margin-top:40px;">
-          <button class="btn-register" onclick="document.getElementById('mentalModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
-        </div>
-        <p style="margin-top:20px;font-size:.85rem;color:#888;">
-          Facilitated by Chris Gudjenov, MS, LPC
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- == Workshop 4: Anchored by Grace == -->
-  <section class="workshop-feature" style="background:#f4f1f8;">
-      <div class="workshop-feature-inner">
-
-        <div class="workshop-flyer-wrap reveal">
-          <img src="images/workshop/anchored-group.png" alt="Anchored by Grace: Divorce Healing & Support Group Flyer">
-        </div>
-
-        <div class="workshop-cta-block reveal">
-          <div class="section-label">Now Enrolling</div>
-          <h2>Anchored by <em>Grace</em></h2>
-          <p>A faith-based 4-week support group for women navigating the challenges of separation or divorce. Together, we create a safe, confidential space to reflect and rebuild—emotionally and spiritually. Registration includes the book <em>"Anchored by Grace: Prayers for Keeping an Undivided Heart After Divorce"</em>.</p>
-
-          <div class="workshop-details">
-            <div class="workshop-detail-chip">
-              <strong>Start Dates</strong>
-              May 1 · May 15<br>May 29 · June 12
-            </div>
-            <div class="workshop-detail-chip">
-              <strong>Time</strong>
-              6:30 PM (60-90 Min)
-            </div>
-            <div class="workshop-detail-chip">
-              <strong>Location</strong>
-              12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
-            </div>
-            <div class="workshop-detail-chip">
-              <strong>Investment</strong>
-              $55 per session
-            </div>
-          </div>
-
-          <div style="margin-top:40px;">
-            <button class="btn-register" onclick="document.getElementById('anchoredModal').classList.add('open');document.body.style.overflow='hidden'">Reserve Your Spot</button>
-          </div>
-
-          <p style="margin-top:20px;font-size:.85rem;color:#888;">
-            Facilitated by Natasha Harris-Butler, LCSW, LSCSW
-          </p>
-        </div>
-
-      </div>
+    <!-- ══ HERO ══ -->
+    <section class="workshops-hero">
+        <div class="section-label section-label--center">Community Workshops</div>
+        <h1>Community Workshops &<br><em>Small Group Experiences</em></h1>
+        <p>Serving the community with intimate, facilitated spaces for healing, growth, and connection.</p>
     </section>
 
-  <!-- ══ CLIENT TESTIMONIALS ══ -->
-  <section class="testimonial-carousel">
-    <div class="section-label section-label--center">Client Stories</div>
+    <!-- ══ WORKSHOP 1: Stitched on Purpose ══ -->
+    <section class="workshop-feature">
+        <div class="workshop-feature-inner">
 
-    <div class="test-carousel-wrap">
-      <div class="test-slide active">
-        <blockquote class="test-quote-carousel">"Thank you so much for all of your support. I am forever grateful."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"You're awesome, and I appreciate your approach."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"Thank you for not judging me."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"You literally saved my life."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"I thank God I found you. You helped me find the strength to heal after that toxic relationship."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"You really connected with my daughter from the jump."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-      <div class="test-slide">
-        <blockquote class="test-quote-carousel">"Our sessions have given me restored hopefulness."</blockquote>
-        <div class="test-author-carousel">— A Journey Embraced Client</div>
-      </div>
-    </div>
+            <div class="workshop-flyer-wrap reveal">
+                <img src="images/workshop/crochet.png"
+                    alt="Stitched on Purpose: A Therapeutic Crochet Group - 6 Week Series">
+            </div>
 
-    <div class="test-dots" role="tablist" aria-label="Testimonial navigation">
-      <button class="test-dot active" data-index="0" aria-label="Testimonial 1" role="tab"></button>
-      <button class="test-dot" data-index="1" aria-label="Testimonial 2" role="tab"></button>
-      <button class="test-dot" data-index="2" aria-label="Testimonial 3" role="tab"></button>
-      <button class="test-dot" data-index="3" aria-label="Testimonial 4" role="tab"></button>
-      <button class="test-dot" data-index="4" aria-label="Testimonial 5" role="tab"></button>
-      <button class="test-dot" data-index="5" aria-label="Testimonial 6" role="tab"></button>
-      <button class="test-dot" data-index="6" aria-label="Testimonial 7" role="tab"></button>
-    </div>
-  </section>
+            <div class="workshop-cta-block reveal">
+                <div class="section-label">Now Enrolling</div>
+                <h2>A space created <em>just for you</em></h2>
+                <p>Join us for a 6-week transformative crochet group experience designed to connect, uplift, and heal.
+                </p>
 
-  <!-- ══ STAY TUNED ══ -->
-  <section class="stay-tuned">
-    <h2>Stay Tuned for the <em>Next Workshop</em></h2>
-    <p>We regularly host community workshops and therapeutic groups. Follow us on Facebook or reach out to be notified about upcoming events.</p>
-  </section>
+                <div class="workshop-details">
+                    <div class="workshop-detail-chip">
+                        <strong>Dates</strong>
+                        Start date provided upon registration
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Time</strong>
+                        Time provided upon registration
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Location</strong>
+                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Investment</strong>
+                        $45 per session
+                    </div>
+                </div>
 
-  <!-- == Stripe Donation Button == -->
-  <section class="scholarship-section">
-      <div class="scholarship-card">
-          <div class="scholarship-info">
-              <span class="section-label" style="color: #00d4a8"
-                  >Community Care</span
-              >
-              <h2>Give the Gift of Therapy</h2>
-              <p>
-                  Your support makes mental health care more accessible for individuals and families facing financial barriers.
-              </p>
-          </div>
+                <div style="margin-top: 40px;">
+                    <button class="btn-register"
+                        onclick="document.getElementById('connectedModal').classList.add('open');document.body.style.overflow='hidden'">Reserve
+                        Your Spot</button>
+                </div>
 
-          <div class="scholarship-action">
+                <p style="margin-top: 20px; font-size: 0.85rem; color: #888;">
+                    Facilitated by Tanise Smith, MS, LPC, LCPC &amp; Cynthia Stokes, LCC
+                </p>
+            </div>
 
-              <div class="nav-item utility-sep">
-                  <stripe-buy-button
-                    buy-button-id="buy_btn_1TJOlEQ30MbEiVYD1q9aeBsh"
-                    publishable-key="pk_live_51THLuFQ30MbEiVYDJyJKlRv8Hxj7cSFNbekG5AwiBlGXWV8YEZuY9AECkcZIDdcS6FUB5wIX4rwpghBJEgdoGiBY00SK1fusFa"
-                  >
-                  </stripe-buy-button>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img class="footer-logo" src="images/logo.png" alt="Journey Embraced Counseling">
-        <p class="footer-about">Compassionate, insight-driven counseling for individuals, couples, and families. Serving Missouri and Kansas since 2020.</p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/journeyembracedkc" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-          <a href="mailto:tanise@jecounselingkc.com" aria-label="Email us">✉</a>
         </div>
-      </div>
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="index.html#counselors">Our Team</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Our Specialists</h5>
-        <ul>
-          <li><a href="index.html#tanise">Tanise Smith</a></li>
-          <li><a href="index.html#natasha">Natasha Harris-Butler</a></li>
-          <li><a href="index.html#debra">Debra Richardson</a></li>
-          <li><a href="index.html#chris">Chris Gudjenov</a></li>
-          <li><a href="index.html#cynthia">Cynthia Stokes</a></li>
-          <li><a href="index.html#jonathan">Jonathan Slade</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact-info">
-        <h5>Contact</h5>
-        <p>12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216</p>
-        <p><a href="tel:8169743389">816-974-3389</a></p>
-        <p><a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a></p>
-      </div>
-    </div>
-    <div class="footer-pt-badge">
-      <a href="https://www.psychologytoday.com/us/therapists/tanise-smith-shawnee-ks/755329" target="_blank" rel="noopener">
-        <img src="images/psychology_today.png" alt="Verified by Psychology Today" height="52">
-      </a>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Journey Embraced Counseling LLC. All rights reserved.</p>
-      <div>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- ══ BOOKING MODAL ══ -->
-  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
-    <div class="modal">
-      <button class="modal-x" aria-label="Close">✕</button>
-      <div class="modal-h" id="bookingModalTitle">Book a Session</div>
-      <div class="modal-sub">Fill out the form below and we'll be in touch to confirm your appointment.</div>
-      <div class="fg">
-        <label>Your Name</label>
-        <div class="fg-row">
-          <input type="text" placeholder="First name" autocomplete="given-name">
-          <input type="text" placeholder="Last name" autocomplete="family-name">
+    <!-- ══ WORKSHOP 2: RECOVER WELL ══ -->
+    <section class="workshop-feature" style="background:#f4f1f8;">
+        <div class="workshop-feature-inner">
+
+            <div class="workshop-flyer-wrap reveal">
+                <img src="images/workshop/flyer-recover-well.png"
+                    alt="Recover Well: Narcissistic Abuse Recovery Group Flyer">
+            </div>
+
+            <div class="workshop-cta-block reveal">
+                <div class="section-label">Now Enrolling</div>
+                <h2>Recover Well: <em>Narcissistic Abuse Recovery Group</em></h2>
+                <p>A safe and supportive space for people healing from narcissistic and emotionally abusive
+                    relationships. This group is designed to help participants rebuild identity, restore self-worth,
+                    process trauma, and break unhealthy relational patterns.</p>
+
+                <div class="workshop-details">
+                    <div class="workshop-detail-chip">
+                        <strong>Dates</strong>
+                        Meets on Saturdays
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Times</strong>
+                        6:00 pm – 7:30 pm
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Location</strong>
+                        12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Investment</strong>
+                        $45 per session
+                    </div>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <button class="btn-register"
+                        onclick="document.getElementById('recoverModal').classList.add('open');document.body.style.overflow='hidden'">Reserve
+                        Your Spot</button>
+                </div>
+
+                <p style="margin-top:20px;font-size:.85rem;color:#888;">
+                    Facilitated by Tanise Smith, MS, LPC, LCPC
+                </p>
+            </div>
+
         </div>
-      </div>
-      <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" autocomplete="email"></div>
-      <div class="fg"><label>Phone</label><input type="tel" placeholder="(816) 000-0000" autocomplete="tel"></div>
-      <div class="fg">
-        <label>Service Type</label>
-        <select>
-          <option value="">Select a service...</option>
-          <option>Individual Counseling</option>
-          <option>Couples Therapy</option>
-          <option>Adolescent Support</option>
-          <option>Faith-Based Counseling</option>
-          <option>Life Coaching</option>
-          <option>Narcissistic Abuse Recovery</option>
-          <option>Men's Mental Health</option>
-          <option>Group Therapy</option>
-        </select>
-      </div>
-      <div class="fg"><label>Message (Optional)</label><textarea placeholder="Brief description of what you'd like to work on..."></textarea></div>
-      <button class="btn-modal" data-form="booking">Request Appointment</button>
+    </section>
+
+    <!-- ══ WORKSHOP 3: RECOVER WELL - MENTAL RECOVERY ══ -->
+    <section class="workshop-feature" <!--style="background:#f4f1f8;-->">
+        <div class="workshop-feature-inner">
+
+            <div class="workshop-flyer-wrap reveal">
+                <img src="images/workshop/mental-recovery.png"
+                    alt="Recover Well Series: Mental Recovery and Return to Sport Flyer">
+            </div>
+
+            <div class="workshop-cta-block reveal">
+                <div class="section-label">Now Enrolling</div>
+                <h2>Mental Recovery & <em>Return to Sport</em></h2>
+                <p>A specialized workshop for high school athletes navigating the psychological challenges of injury.
+                    This session focuses on rebuilding confidence, managing the emotional toll of being sidelined, and
+                    preparing for a resilient return to the game.</p>
+
+                <div class="workshop-details">
+                    <div class="workshop-detail-chip">
+                        <strong>Dates</strong>
+                        Meets on Tuesdays
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Times</strong>
+                        6:30 PM – 8:00 PM
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Location</strong>
+                        12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Investment</strong>
+                        $45 per session
+                    </div>
+                </div>
+                <div style="margin-top:40px;">
+                    <button class="btn-register"
+                        onclick="document.getElementById('mentalModal').classList.add('open');document.body.style.overflow='hidden'">Reserve
+                        Your Spot</button>
+                </div>
+                <p style="margin-top:20px;font-size:.85rem;color:#888;">
+                    Facilitated by Chris Gudjenov, MS, LPC
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- == Workshop 4: Anchored by Grace == -->
+    <section class="workshop-feature" style="background:#f4f1f8;">
+        <div class="workshop-feature-inner">
+
+            <div class="workshop-flyer-wrap reveal">
+                <img src="images/workshop/anchored-group.png"
+                    alt="Anchored by Grace: Divorce Healing & Support Group Flyer">
+            </div>
+
+            <div class="workshop-cta-block reveal">
+                <div class="section-label">Now Enrolling</div>
+                <h2>Anchored by <em>Grace</em></h2>
+                <p>A faith-based 4-week support group for women navigating the challenges of separation or divorce.
+                    Together, we create a safe, confidential space to reflect and rebuild—emotionally and spiritually.
+                    Registration includes the book <em>"Anchored by Grace: Prayers for Keeping an Undivided Heart After
+                        Divorce"</em>.</p>
+
+                <div class="workshop-details">
+                    <div class="workshop-detail-chip">
+                        <strong>Start Dates</strong>
+                        Meets on Fridays
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Time</strong>
+                        6:30 PM (60-90 Min)
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Location</strong>
+                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Investment</strong>
+                        $55 per session
+                    </div>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <button class="btn-register"
+                        onclick="document.getElementById('anchoredModal').classList.add('open');document.body.style.overflow='hidden'">Reserve
+                        Your Spot</button>
+                </div>
+
+                <p style="margin-top:20px;font-size:.85rem;color:#888;">
+                    Facilitated by Natasha Harris-Butler, LCSW, LSCSW
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Workshop 5: Coping Through Singing -->
+    <section class="workshop-feature" <!--style="background:#f4f1f8;-->">
+        <div class="workshop-feature-inner">
+
+            <div class="workshop-flyer-wrap reveal">
+                <img src="images/workshop/singing-group.png"
+                    alt="Coping Through Singing, A Faith-Based Group for 5th and 6th Graders">
+            </div>
+
+            <div class="workshop-cta-block reveal">
+                <div class="section-label">Now Enrolling</div>
+                <h2>Coping Through <em>Singing</em></h2>
+                <p>A faith-based group for youth.</p>
+
+                <div class="workshop-details">
+                    <div class="workshop-detail-chip">
+                        <strong>Start Dates</strong>
+                        Starts in June · Meets on Saturdays
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Time</strong>
+                        11:00 AM
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Location</strong>
+                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                    </div>
+                    <div class="workshop-detail-chip">
+                        <strong>Investment</strong>
+                        $45 per session
+                    </div>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <button class="btn-register"
+                        onclick="document.getElementById('singingModal').classList.add('open');document.body.style.overflow='hidden'">Reserve
+                        Your Spot</button>
+                </div>
+
+                <p style="margin-top:20px;font-size:.85rem;color:#888;">
+                    Facilitated by Tanise Smith, MS, LCPC
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══ CLIENT TESTIMONIALS ══ -->
+    <section class="testimonial-carousel">
+        <div class="section-label section-label--center">Client Stories</div>
+
+        <div class="test-carousel-wrap">
+            <div class="test-slide active">
+                <blockquote class="test-quote-carousel">"Thank you so much for all of your support. I am forever
+                    grateful."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"You're awesome, and I appreciate your approach."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"Thank you for not judging me."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"You literally saved my life."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"I thank God I found you. You helped me find the strength to
+                    heal after that toxic relationship."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"You really connected with my daughter from the jump."
+                </blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+            <div class="test-slide">
+                <blockquote class="test-quote-carousel">"Our sessions have given me restored hopefulness."</blockquote>
+                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            </div>
+        </div>
+
+        <div class="test-dots" role="tablist" aria-label="Testimonial navigation">
+            <button class="test-dot active" data-index="0" aria-label="Testimonial 1" role="tab"></button>
+            <button class="test-dot" data-index="1" aria-label="Testimonial 2" role="tab"></button>
+            <button class="test-dot" data-index="2" aria-label="Testimonial 3" role="tab"></button>
+            <button class="test-dot" data-index="3" aria-label="Testimonial 4" role="tab"></button>
+            <button class="test-dot" data-index="4" aria-label="Testimonial 5" role="tab"></button>
+            <button class="test-dot" data-index="5" aria-label="Testimonial 6" role="tab"></button>
+            <button class="test-dot" data-index="6" aria-label="Testimonial 7" role="tab"></button>
+        </div>
+    </section>
+
+    <!-- ══ STAY TUNED ══ -->
+    <section class="stay-tuned">
+        <h2>Stay Tuned for the <em>Next Workshop</em></h2>
+        <p>We regularly host community workshops and therapeutic groups. Follow us on Facebook or reach out to be
+            notified about upcoming events.</p>
+    </section>
+
+    <!-- == Stripe Donation Button == -->
+    <section class="scholarship-section">
+        <div class="scholarship-card">
+            <div class="scholarship-info">
+                <span class="section-label" style="color: #00d4a8">Community Care</span>
+                <h2>Give the Gift of Therapy</h2>
+                <p>
+                    Your support makes mental health care more accessible for individuals and families facing financial
+                    barriers.
+                </p>
+            </div>
+
+            <div class="scholarship-action">
+
+                <div class="nav-item utility-sep">
+                    <stripe-buy-button buy-button-id="buy_btn_1TJOlEQ30MbEiVYD1q9aeBsh"
+                        publishable-key="pk_live_51THLuFQ30MbEiVYDJyJKlRv8Hxj7cSFNbekG5AwiBlGXWV8YEZuY9AECkcZIDdcS6FUB5wIX4rwpghBJEgdoGiBY00SK1fusFa">
+                    </stripe-buy-button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/logo.png" alt="Journey Embraced Counseling">
+                <p class="footer-about">Compassionate, insight-driven counseling for individuals, couples, and families.
+                    Serving Missouri and Kansas since 2020.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/journeyembracedkc" target="_blank" rel="noopener"
+                        aria-label="Facebook">f</a>
+                    <a href="mailto:tanise@jecounselingkc.com" aria-label="Email us">✉</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#counselors">Our Team</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Our Specialists</h5>
+                <ul>
+                    <li><a href="index.html#tanise">Tanise Smith</a></li>
+                    <li><a href="index.html#natasha">Natasha Harris-Butler</a></li>
+                    <li><a href="index.html#debra">Debra Richardson</a></li>
+                    <li><a href="index.html#chris">Chris Gudjenov</a></li>
+                    <li><a href="index.html#brie">Brie Byers</a></li>
+                    <li><a href="index.html#cynthia">Cynthia Stokes</a></li>
+                    <li><a href="index.html#jonathan">Jonathan Slade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact-info">
+                <h5>Contact</h5>
+                <p>12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216</p>
+                <p><a href="tel:8169743389">816-974-3389</a></p>
+                <p><a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a></p>
+            </div>
+        </div>
+        <div class="footer-pt-badge">
+            <a href="https://www.psychologytoday.com/us/therapists/tanise-smith-shawnee-ks/755329" target="_blank"
+                rel="noopener">
+                <img src="images/psychology_today.png" alt="Verified by Psychology Today" height="52">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Journey Embraced Counseling LLC. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══ BOOKING MODAL ══ -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+        <div class="modal">
+            <button class="modal-x" aria-label="Close">✕</button>
+            <div class="modal-h" id="bookingModalTitle">Book a Session</div>
+            <div class="modal-sub">Fill out the form below and we'll be in touch to confirm your appointment.</div>
+            <div class="fg">
+                <label>Your Name</label>
+                <div class="fg-row">
+                    <input type="text" placeholder="First name" autocomplete="given-name">
+                    <input type="text" placeholder="Last name" autocomplete="family-name">
+                </div>
+            </div>
+            <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" autocomplete="email">
+            </div>
+            <div class="fg"><label>Phone</label><input type="tel" placeholder="(816) 000-0000" autocomplete="tel"></div>
+            <div class="fg">
+                <label>Service Type</label>
+                <select>
+                    <option value="">Select a service...</option>
+                    <option>Individual Counseling</option>
+                    <option>Couples Therapy</option>
+                    <option>Adolescent Support</option>
+                    <option>Faith-Based Counseling</option>
+                    <option>Life Coaching</option>
+                    <option>Narcissistic Abuse Recovery</option>
+                    <option>Men's Mental Health</option>
+                    <option>Group Therapy</option>
+                </select>
+            </div>
+            <div class="fg"><label>Message (Optional)</label><textarea
+                    placeholder="Brief description of what you'd like to work on..."></textarea></div>
+            <button class="btn-modal" data-form="booking">Request Appointment</button>
+        </div>
     </div>
-  </div>
     <div class="chat-input-row">
-      <input class="chat-input" id="chatIn" type="text" placeholder="Type a message..." aria-label="Chat message">
-      <button class="chat-send" id="chatSendBtn" aria-label="Send message">➤</button>
+        <input class="chat-input" id="chatIn" type="text" placeholder="Type a message..." aria-label="Chat message">
+        <button class="chat-send" id="chatSendBtn" aria-label="Send message">➤</button>
     </div>
-  </div>
+    </div>
 
-  <!-- ══ WORKSHOP MODAL 1: CONNECTED ══ -->
-  <div class="modal-overlay" id="connectedModal" role="dialog" aria-modal="true">
-    <div class="modal">
-      <button class="modal-x" onclick="document.getElementById('connectedModal').classList.remove('open');document.body.style.overflow=''">✕</button>
-      <div class="modal-h">Reserve Your Spot</div>
-      <div class="modal-sub">Connected: Strengthening the Mother-Daughter Bond<br>March 28 – April 18 · 11:00 AM–12:30 PM · $65 per session</div>
-      <form name="workshop-connected" netlify netlify-honeypot="bot-field" id="connectedForm">
-        <input type="hidden" name="form-name" value="workshop-connected">
-        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <div class="fg"><label>Your Name</label><div class="fg-row">
-          <input type="text" name="first-name" placeholder="First name" required>
-          <input type="text" name="last-name" placeholder="Last name" required>
-        </div></div>
-        <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
-        <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"></div>
-        <div class="fg"><label>Number Attending (pairs)</label>
-          <select name="attending">
-            <option value="">Select...</option>
-            <option value="1 pair">1 pair</option>
-            <option value="2 pairs">2 pairs</option>
-            <option value="3 pairs">3 pairs</option>
-          </select>
+    <!-- ══ WORKSHOP MODAL 1: CONNECTED ══ -->
+    <div class="modal-overlay" id="connectedModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal-x"
+                onclick="document.getElementById('connectedModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+            <div class="modal-h">Reserve Your Spot</div>
+            <div class="modal-sub">Stitched on Purpose<br>Meets on Saturdays · $45 per session</div>
+            <form name="workshop-connected" netlify netlify-honeypot="bot-field" id="connectedForm">
+                <input type="hidden" name="form-name" value="workshop-connected">
+                <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+                <div class="fg"><label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" required>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com"
+                        required></div>
+                <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"></div>
+                <div class="fg"><label>Number Attending <!--(pairs)--></label>
+                    <!--Remove the 'pairs' from the label if not needed -->
+                    <select name="attending">
+                        <option value="">Select...</option>
+                        <option value="1 participant">1 participant</option>
+                        <option value="2 participants">2 participants</option>
+                        <option value="3 participants">3 participants</option>
+                    </select>
+                </div>
+                <div class="fg"><label>Message (Optional)</label><textarea name="message"
+                        placeholder="Any questions or notes for us..."></textarea></div>
+                <button type="submit" class="btn-modal">Reserve My Spot</button>
+            </form>
+            <div id="connectedSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">&#10003;</div>
+                <p>Thank you! Your spot request has been received. We will be in touch shortly.</p>
+            </div>
         </div>
-        <div class="fg"><label>Message (Optional)</label><textarea name="message" placeholder="Any questions or notes for us..."></textarea></div>
-        <button type="submit" class="btn-modal">Reserve My Spot</button>
-      </form>
-      <div id="connectedSuccess" class="modal-success" style="display:none;">
-        <div class="success-icon">&#10003;</div>
-        <p>Thank you! Your spot request has been received. We will be in touch shortly.</p>
-      </div>
     </div>
-  </div>
 
-  <!-- ══ WORKSHOP MODAL 2: RECOVER WELL ══ -->
-  <div class="modal-overlay" id="recoverModal" role="dialog" aria-modal="true">
-    <div class="modal">
-      <button class="modal-x" onclick="document.getElementById('recoverModal').classList.remove('open');document.body.style.overflow=''">✕</button>
-      <div class="modal-h">Reserve Your Spot</div>
-      <div class="modal-sub">Recover Well: Narcissistic Abuse Recovery Group<br>Apr 22 – June 3 · $45 per session</div>
-      <form name="workshop-recover-well" netlify netlify-honeypot="bot-field" id="recoverForm">
-        <input type="hidden" name="form-name" value="workshop-recover-well">
-        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <div class="fg"><label>Your Name</label><div class="fg-row">
-          <input type="text" name="first-name" placeholder="First name" required>
-          <input type="text" name="last-name" placeholder="Last name" required>
-        </div></div>
-        <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
-        <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"></div>
-        <!-- == Comment Out or Uncomment as needed
+    <!-- ══ WORKSHOP MODAL 2: RECOVER WELL ══ -->
+    <div class="modal-overlay" id="recoverModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal-x"
+                onclick="document.getElementById('recoverModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+            <div class="modal-h">Reserve Your Spot</div>
+            <div class="modal-sub">Recover Well: Narcissistic Abuse Recovery Group<br>Meets on Saturdays · $45 per
+                session
+            </div>
+            <form name="workshop-recover-well" netlify netlify-honeypot="bot-field" id="recoverForm">
+                <input type="hidden" name="form-name" value="workshop-recover-well">
+                <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+                <div class="fg"><label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" required>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com"
+                        required></div>
+                <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"></div>
+
+                <!-- == Comment Out or Uncomment as needed
         <div class="fg"><label>Preferred Time Slot</label>
           <select name="time-slot" required>
             <option value="">Select a time slot...</option>
@@ -553,134 +650,192 @@
           </select>
         </div>
         -->
-        <div class="fg"><label>Number Attending</label>
-          <select name="attending">
-            <option value="">Select...</option>
-            <option value="1 person">1 person</option>
-            <option value="2 people">2 people</option>
-            <option value="3 people">3 people</option>
-          </select>
-        </div>
-        <div class="fg"><label>Message (Optional)</label><textarea name="message" placeholder="Any questions or notes for us..."></textarea></div>
-        <button type="submit" class="btn-modal">Reserve My Spot</button>
-      </form>
-      <div id="recoverSuccess" class="modal-success" style="display:none;">
-        <div class="success-icon">&#10003;</div>
-        <p>Thank you! Your spot request has been received. We will be in touch shortly.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ WORKSHOP MODAL 3: MENTAL RECOVERY & RETURN TO SPORT ══ -->
-  <div class="modal-overlay" id="mentalModal" role="dialog" aria-modal="true">
-      <div class="modal">
-        <button class="modal-x" onclick="document.getElementById('mentalModal').classList.remove('open');document.body.style.overflow=''">✕</button>
-        <div class="modal-h">Reserve Your Spot</div>
-        <div class="modal-sub">Mental Recovery & Return to Sport<br>Mondays: Apr 20 – May 25 · 6:30 PM · $45 per session</div>
-
-        <form name="workshop-mental-recovery" netlify netlify-honeypot="bot-field" id="mentalForm">
-          <input type="hidden" name="form-name" value="workshop-mental-recovery">
-          <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
-
-          <div class="fg">
-            <label>Your Name</label>
-            <div class="fg-row">
-              <input type="text" name="first-name" placeholder="First name" required>
-              <input type="text" name="last-name" placeholder="Last name" required>
+                <div class="fg"><label>Number Attending</label>
+                    <select name="attending">
+                        <option value="">Select...</option>
+                        <option value="1 participant">1 participant</option>
+                        <option value="2 participants">2 participants</option>
+                        <option value="3 participants">3 participants</option>
+                    </select>
+                </div>
+                <div class="fg"><label>Message (Optional)</label><textarea name="message"
+                        placeholder="Any questions or notes for us..."></textarea></div>
+                <button type="submit" class="btn-modal">Reserve My Spot</button>
+            </form>
+            <div id="recoverSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">&#10003;</div>
+                <p>Thank you! Your spot request has been received. We will be in touch shortly.</p>
             </div>
-          </div>
-
-          <div class="fg">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="your@email.com" required>
-          </div>
-
-          <div class="fg">
-            <label>Phone</label>
-            <input type="tel" name="phone" placeholder="(816) 000-0000">
-          </div>
-
-          <div class="fg">
-            <label>Number of Athletes Attending</label>
-            <select name="attending" required>
-              <option value="">Select...</option>
-              <option value="1 athlete">1 athlete</option>
-              <option value="2 athletes">2 athletes</option>
-              <option value="3 athletes">3 athletes</option>
-            </select>
-          </div>
-
-          <div class="fg">
-            <label>Message (Optional)</label>
-            <textarea name="message" placeholder="Optional: Tell us which sport or injury you're recovering from..."></textarea>
-          </div>
-
-          <button type="submit" class="btn-modal">Reserve My Spot</button>
-        </form>
-
-        <div id="mentalSuccess" class="modal-success" style="display:none;">
-          <div class="success-icon">&#10003;</div>
-          <p>Thank you! Your request for Chris's workshop has been received. We will be in touch shortly.</p>
         </div>
-      </div>
+    </div>
+
+    <!-- ══ WORKSHOP MODAL 3: MENTAL RECOVERY & RETURN TO SPORT ══ -->
+    <div class="modal-overlay" id="mentalModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal-x"
+                onclick="document.getElementById('mentalModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+            <div class="modal-h">Reserve Your Spot</div>
+            <div class="modal-sub">Mental Recovery & Return to Sport<br>Meets on Mondays · $45 per
+                session</div>
+
+            <form name="workshop-mental-recovery" netlify netlify-honeypot="bot-field" id="mentalForm">
+                <input type="hidden" name="form-name" value="workshop-mental-recovery">
+                <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+                <div class="fg">
+                    <label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" required>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="fg">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="fg">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" placeholder="(816) 000-0000">
+                </div>
+
+                <div class="fg">
+                    <label>Number of Participants Attending</label>
+                    <select name="attending" required>
+                        <option value="">Select...</option>
+                        <option value="1 participant">1 participant</option>
+                        <option value="2 participants">2 participants</option>
+                        <option value="3 participants">3 participants</option>
+                    </select>
+                </div>
+
+                <div class="fg">
+                    <label>Message (Optional)</label>
+                    <textarea name="message"
+                        placeholder="Optional: Tell us which sport or injury you're recovering from..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-modal">Reserve My Spot</button>
+            </form>
+
+            <div id="mentalSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">&#10003;</div>
+                <p>Thank you! Your request for Chris's workshop has been received. We will be in touch shortly.</p>
+            </div>
+        </div>
     </div>
 
     <!-- == Workshop Modal 4: Anchored by Grace == -->
     <div class="modal-overlay" id="anchoredModal" role="dialog" aria-modal="true">
         <div class="modal">
-          <button class="modal-x" onclick="document.getElementById('anchoredModal').classList.remove('open');document.body.style.overflow=''">✕</button>
-          <div class="modal-h">Reserve Your Spot</div>
-          <div class="modal-sub">Anchored by Grace: Divorce Healing & Support Group<br>May 1st – June 12th · 6:30 PM · $55 per session</div>
+            <button class="modal-x"
+                onclick="document.getElementById('anchoredModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+            <div class="modal-h">Reserve Your Spot</div>
+            <div class="modal-sub">Anchored by Grace: Divorce Healing & Support Group<br>Meets on Fridays · 6:30 PM ·
+                $55 per session</div>
 
-          <form name="workshop-anchored-by-grace" netlify netlify-honeypot="bot-field" id="anchoredForm">
-            <input type="hidden" name="form-name" value="workshop-anchored-by-grace">
-            <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <form name="workshop-anchored-by-grace" netlify netlify-honeypot="bot-field" id="anchoredForm">
+                <input type="hidden" name="form-name" value="workshop-anchored-by-grace">
+                <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
 
-            <div class="fg">
-              <label>Your Name</label>
-              <div class="fg-row">
-                <input type="text" name="first-name" placeholder="First name" required>
-                <input type="text" name="last-name" placeholder="Last name" required>
-              </div>
+                <div class="fg">
+                    <label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" required>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="fg">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="fg">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" placeholder="(816) 000-0000">
+                </div>
+
+                <!-- Remove this portion of code if not needed
+                <div class="fg">
+                    <label>Select Your Start Date</label>
+                    <select name="start-date" required>
+                        <option value="">Select a date...</option>
+                        <option value="May 1st">May 1st</option>
+                        <option value="May 15th">May 15th</option>
+                        <option value="May 29th">May 29th</option>
+                        <option value="June 12th">June 12th</option>
+                    </select>
+                </div>
+                -->
+
+                <div class="fg">
+                    <label>Message (Optional)</label>
+                    <textarea name="message" placeholder="Any questions or notes for Natasha..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-modal">Reserve My Spot</button>
+            </form>
+
+            <div id="anchoredSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">&#10003;</div>
+                <p>Thank you! Your request for the Anchored by Grace group has been received. We will be in touch
+                    shortly.</p>
             </div>
-
-            <div class="fg">
-              <label>Email</label>
-              <input type="email" name="email" placeholder="your@email.com" required>
-            </div>
-
-            <div class="fg">
-              <label>Phone</label>
-              <input type="tel" name="phone" placeholder="(816) 000-0000">
-            </div>
-
-            <div class="fg">
-              <label>Select Your Start Date</label>
-              <select name="start-date" required>
-                <option value="">Select a date...</option>
-                <option value="May 1st">May 1st</option>
-                <option value="May 15th">May 15th</option>
-                <option value="May 29th">May 29th</option>
-                <option value="June 12th">June 12th</option>
-              </select>
-            </div>
-
-            <div class="fg">
-              <label>Message (Optional)</label>
-              <textarea name="message" placeholder="Any questions or notes for Natasha..."></textarea>
-            </div>
-
-            <button type="submit" class="btn-modal">Reserve My Spot</button>
-          </form>
-
-          <div id="anchoredSuccess" class="modal-success" style="display:none;">
-            <div class="success-icon">&#10003;</div>
-            <p>Thank you! Your request for the Anchored by Grace group has been received. We will be in touch shortly.</p>
-          </div>
         </div>
-      </div>
+    </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/workshops-form.js"></script>
+    <!-- == Workshop Modal 5: Coping Through Singing == -->
+    <div class="modal-overlay" id="singingModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal-x"
+                onclick="document.getElementById('singingModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+            <div class="modal-h">Reserve Your Spot</div>
+            <div class="modal-sub">Coping Through Singing: A Faith-Based Group for 5th and 6th Graders<br>Meets on
+                Saturdays · 11:00 AM ·
+                $45 per session</div>
+
+            <form name="workshop-singing-through-grace" netlify netlify-honeypot="bot-field" id="singingForm">
+                <input type="hidden" name="form-name" value="workshop-singing-through-grace">
+                <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+                <div class="fg">
+                    <label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" required>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="fg">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="fg">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" placeholder="(816) 000-0000">
+                </div>
+
+                <div class="fg">
+                    <label>Message (Optional)</label>
+                    <textarea name="message" placeholder="Any questions or notes for Tanise..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-modal">Reserve My Spot</button>
+            </form>
+
+            <div id="singingSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">&#10003;</div>
+                <p>Thank you! Your request for the Coping Through Singing group has been received. We will be in touch
+                    shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/workshops-form.js"></script>
 </body>
+
 </html>
