@@ -219,7 +219,7 @@ nav {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
 }
 .nav-item {
     position: relative;
@@ -358,9 +358,9 @@ nav {
     display: flex;
     align-items: center;
     gap: 0;
-    margin-left: 70px;
-    /* gap: 0.75rem; */ /* original key: pair */
+    margin-left: 0;
 }
+
 .btn-nav-ghost {
     font-family: "Jost", sans-serif;
     font-size: 0.75rem;
