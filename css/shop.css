@@ -160,10 +160,3 @@
     background: var(--purple-light);
     transform: translateY(-1px);
 }
-
-/* Force the mobile menu to stay hidden on desktop screens */
-@media (min-width: 992px) {
-    .mob-menu {
-        display: none !important;
-    }
-}

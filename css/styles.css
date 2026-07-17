@@ -715,6 +715,7 @@ nav {
     padding: 2.5rem var(--pad);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
     border-top: 2px solid rgba(0, 212, 168, 0.25);
@@ -1443,6 +1444,8 @@ footer {
         padding: 4rem 2rem 2rem;
     }
 }
+
+
 @media (max-width: 700px) {
     .services-grid {
         grid-template-columns: 1fr;
@@ -1478,6 +1481,13 @@ footer {
     .nav-link-utility {
         font-size: 0.85rem;
         margin-right: 5px;
+    }
+}
+
+/* Force the mobile menu to stay hidden on desktop screens */
+@media (min-width: 992px) {
+    .mob-menu {
+        display: none !important;
     }
 }
 

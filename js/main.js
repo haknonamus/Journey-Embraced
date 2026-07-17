@@ -100,6 +100,14 @@
       });
     });
 
+    // Generic open triggers via data-open-modal (e.g. workshop "Reserve" buttons)
+    document.querySelectorAll('[data-open-modal]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal(btn.getAttribute('data-open-modal'));
+      });
+    });
+
     // Generic booking triggers — no pre-selection
     var bookingTriggers = [
       'bookNavBtn', 'heroBookBtn', 'welcomeBookBtn', 'teamBookBtn', 'bannerBookBtn'
