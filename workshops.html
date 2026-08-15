@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/workshops.css">
@@ -30,70 +30,11 @@
                 <a href="index.html" class="nav-link">Home</a>
             </div>
             <div class="nav-item">
-                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
             </div>
             <div class="nav-item">
-                <button class="nav-link" id="teamDropBtn" aria-expanded="false" aria-haspopup="true">
-                    Our Team
-                    <svg viewBox="0 0 10 6" aria-hidden="true">
-                        <path d="M0 0l5 6 5-6z" />
-                    </svg>
-                </button>
-                <div class="mega-drop" role="menu">
-                    <a class="drop-card" href="index.html#tanise" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/tanise.webp" alt="Tanise Smith">
-                        <div class="drop-info">
-                            <div class="drop-name">Tanise Smith</div>
-                            <div class="drop-role">MS, LCPC · Founder</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#natasha" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/natasha.webp" alt="Natasha Harris-Butler">
-                        <div class="drop-info">
-                            <div class="drop-name">Natasha Harris-Butler</div>
-                            <div class="drop-role">LCSW, LSCSW</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#chris" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/chris.webp" alt="Chris Gudjenov">
-                        <div class="drop-info">
-                            <div class="drop-name">Chris Gudjenov</div>
-                            <div class="drop-role">LPC · Athletes & Men</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#brie" role="menuitem"><img loading="lazy" class="drop-thumb"
-                            src="images/profile/brie.webp" alt="Brie Byers" />
-                        <div class="drop-info">
-                            <div class="drop-name">Brie Byers</div>
-                            <div class="drop-role">MS, LPC</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#cynthia" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/cynthia.webp" alt="Cynthia Stokes">
-                        <div class="drop-info">
-                            <div class="drop-name">Cynthia Stokes</div>
-                            <div class="drop-role">LCC · Life Coach</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#jonathan" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/jonathan.webp" alt="Jonathan Slade">
-                        <div class="drop-info">
-                            <div class="drop-name">Jonathan Slade</div>
-                            <div class="drop-role">B.Th. · Pastoral Coach</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="index.html#adrian" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/adrian.webp" alt="Adrian Smith" />
-                        <div class="drop-info">
-                            <div class="drop-name">Adrian Smith</div>
-                            <div class="drop-role">
-                                Insurance & Billing Specialist
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <a href="team.html" class="nav-link">Our Team</a>
             </div>
-            <div class="nav-item"><a href="index.html#services" class="nav-link">Services</a></div>
             <div class="nav-item"><a href="workshops.html" class="nav-link">Workshops</a></div>
             <div class="nav-item">
                 <a href="blog.html" class="nav-link">Blog</a>
@@ -113,7 +54,7 @@
                         <span class="contact-drop-icon">📧</span>
                         <a href="mailto:cstokes@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
                     </div>
-                    <div class="contact-drop-row">
+                    <div class="contact-drop-row contact-drop-row--phone">
                         <span class="contact-drop-icon">📞</span>
                         <a href="tel:8169743389">816-974-3389</a>
                     </div>
@@ -137,19 +78,13 @@
     <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
         <button class="mob-close" id="mobClose" aria-label="Close menu">✕</button>
         <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#counselors">Our Team</a>
         <a href="index.html#services">Services</a>
+        <a href="team.html">Our Team</a>
         <a href="workshops.html">Workshops</a>
         <a href="blog.html">Blog</a>
         <a href="shop.html">Shop</a>
         <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
         <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
-    </div>
-
-    <!-- ══ REGISTRATION OPEN BANNER ══ -->
-    <div class="reg-open-banner">
-        <span><span class="reg-open-dot"></span>Registration Now Open</span>
     </div>
 
     <!-- ══ HERO ══ -->
@@ -169,6 +104,7 @@
             </div>
 
             <div class="workshop-cta-block reveal">
+                <span class="workshop-topic-label workshop-topic-label--teal">Creative Arts Group</span>
                 <div class="section-label">Now Enrolling</div>
                 <h2>A space created <em>just for you</em></h2>
                 <p>Join us for a 6-week transformative crochet group experience designed to connect, uplift, and heal.
@@ -176,20 +112,16 @@
 
                 <div class="workshop-details">
                     <div class="workshop-detail-chip">
-                        <strong>Dates</strong>
-                        Saturdays
+                        <strong>Dates</strong> &middot; Saturdays
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Time</strong>
-                        10:00 am - 11:30 am
+                        <strong>Time</strong> &middot; 10:00 am - 11:30 am
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Location</strong>
-                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                        <strong>Location</strong> &middot; 12480 W 62nd Terr, Shawnee, KS
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Investment</strong>
-                        $45 per session
+                        <strong>Investment</strong> &middot; $45 per session
                     </div>
                 </div>
 
@@ -217,6 +149,7 @@
             </div>
 
             <div class="workshop-cta-block reveal">
+                <span class="workshop-topic-label workshop-topic-label--purple">Narcissistic Abuse Recovery</span>
                 <div class="section-label">Now Enrolling</div>
                 <h2>Recover Well: <em>Narcissistic Abuse Recovery Group</em></h2>
                 <p>A safe and supportive space for people healing from narcissistic and emotionally abusive
@@ -225,20 +158,16 @@
 
                 <div class="workshop-details">
                     <div class="workshop-detail-chip">
-                        <strong>Dates</strong>
-                        Saturdays
+                        <strong>Dates</strong> &middot; Saturdays
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Times</strong>
-                        6:00 pm – 7:30 pm
+                        <strong>Times</strong> &middot; 6:00 pm – 7:30 pm
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Location</strong>
-                        12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
+                        <strong>Location</strong> &middot; 12480 W. 62 Terr, Shawnee, KS
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Investment</strong>
-                        $45 per session
+                        <strong>Investment</strong> &middot; $45 per session
                     </div>
                 </div>
 
@@ -257,7 +186,7 @@
     </section>
 
     <!-- ══ WORKSHOP 3: RECOVER WELL - MENTAL RECOVERY ══ -->
-    <section class="workshop-feature" <!--style="background:#f4f1f8;-->">
+    <section class="workshop-feature">
         <div class="workshop-feature-inner">
 
             <div class="workshop-flyer-wrap reveal">
@@ -266,6 +195,7 @@
             </div>
 
             <div class="workshop-cta-block reveal">
+                <span class="workshop-topic-label workshop-topic-label--coral">Athletic Mental Performance</span>
                 <div class="section-label">Now Enrolling</div>
                 <h2>Mental Recovery & <em>Return to Sport</em></h2>
                 <p>A specialized workshop for high school athletes navigating the psychological challenges of injury.
@@ -274,20 +204,16 @@
 
                 <div class="workshop-details">
                     <div class="workshop-detail-chip">
-                        <strong>Dates</strong>
-                        Tuesdays
+                        <strong>Dates</strong> &middot; Tuesdays
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Times</strong>
-                        6:30 PM – 8:00 PM
+                        <strong>Times</strong> &middot; 6:30 PM – 8:00 PM
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Location</strong>
-                        12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216
+                        <strong>Location</strong> &middot; 12480 W. 62 Terr, Shawnee, KS
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Investment</strong>
-                        $45 per session
+                        <strong>Investment</strong> &middot; $45 per session
                     </div>
                 </div>
                 <div style="margin-top:40px;">
@@ -312,6 +238,7 @@
             </div>
 
             <div class="workshop-cta-block reveal">
+                <span class="workshop-topic-label workshop-topic-label--gold">Faith-Based</span>
                 <div class="section-label">Now Enrolling</div>
                 <h2>Anchored by <em>Grace</em></h2>
                 <p>A faith-based 4-week support group for women navigating the challenges of separation or divorce.
@@ -321,20 +248,16 @@
 
                 <div class="workshop-details">
                     <div class="workshop-detail-chip">
-                        <strong>Start Dates</strong>
-                        Fridays
+                        <strong>Start Dates</strong> &middot; Fridays
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Time</strong>
-                        6:30 PM (60-90 Min)
+                        <strong>Time</strong> &middot; 6:30 PM (60-90 Min)
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Location</strong>
-                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                        <strong>Location</strong> &middot; 12480 W 62nd Terr, Shawnee, KS
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Investment</strong>
-                        $55 per session
+                        <strong>Investment</strong> &middot; $55 per session
                     </div>
                 </div>
 
@@ -353,7 +276,7 @@
     </section>
 
     <!-- Workshop 5: Coping Through Singing -->
-    <section class="workshop-feature" <!--style="background:#f4f1f8;-->">
+    <section class="workshop-feature">
         <div class="workshop-feature-inner">
 
             <div class="workshop-flyer-wrap reveal">
@@ -362,26 +285,23 @@
             </div>
 
             <div class="workshop-cta-block reveal">
+                <span class="workshop-topic-label workshop-topic-label--teal">Creative Arts Group</span>
                 <div class="section-label">Now Enrolling</div>
                 <h2>Coping Through <em>Singing</em></h2>
                 <p>A faith-based group for youth.</p>
 
                 <div class="workshop-details">
                     <div class="workshop-detail-chip">
-                        <strong>Start Dates</strong>
-                        Saturdays
+                        <strong>Start Dates</strong> &middot; Saturdays
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Time</strong>
-                        11:00 AM
+                        <strong>Time</strong> &middot; 11:00 AM
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Location</strong>
-                        12480 W 62nd Terr, Ste 101<br>Shawnee, KS 66216
+                        <strong>Location</strong> &middot; 12480 W 62nd Terr, Shawnee, KS
                     </div>
                     <div class="workshop-detail-chip">
-                        <strong>Investment</strong>
-                        $45 per session
+                        <strong>Investment</strong> &middot; $45 per session
                     </div>
                 </div>
 
@@ -400,51 +320,26 @@
     </section>
 
     <!-- ══ CLIENT TESTIMONIALS ══ -->
-    <section class="testimonial-carousel">
-        <div class="section-label section-label--center">Client Stories</div>
-
-        <div class="test-carousel-wrap">
-            <div class="test-slide active">
-                <blockquote class="test-quote-carousel">"Thank you so much for all of your support. I am forever
-                    grateful."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
+    <!-- ══ TESTIMONIAL ══ -->
+    <section class="testimonial">
+        <div class="testimonial-inner reveal">
+            <div class="section-label section-label--center">
+                Client Stories
             </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"You're awesome, and I appreciate your approach."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            <div class="test-quote" id="testQuote">
+                "Thank you so much for all of your support. I am forever
+                grateful."
             </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"Thank you for not judging me."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
+            <div class="test-author">— A Journey Embraced Client</div>
+            <div class="test-dots">
+                <button class="test-dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="test-dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="test-dot" data-index="2" aria-label="Testimonial 3"></button>
+                <button class="test-dot" data-index="3" aria-label="Testimonial 4"></button>
+                <button class="test-dot" data-index="4" aria-label="Testimonial 5"></button>
+                <button class="test-dot" data-index="5" aria-label="Testimonial 6"></button>
+                <button class="test-dot" data-index="6" aria-label="Testimonial 7"></button>
             </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"You literally saved my life."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
-            </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"I thank God I found you. You helped me find the strength to
-                    heal after that toxic relationship."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
-            </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"You really connected with my daughter from the jump."
-                </blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
-            </div>
-            <div class="test-slide">
-                <blockquote class="test-quote-carousel">"Our sessions have given me restored hopefulness."</blockquote>
-                <div class="test-author-carousel">— A Journey Embraced Client</div>
-            </div>
-        </div>
-
-        <div class="test-dots" role="tablist" aria-label="Testimonial navigation">
-            <button class="test-dot active" data-index="0" aria-label="Testimonial 1" role="tab"></button>
-            <button class="test-dot" data-index="1" aria-label="Testimonial 2" role="tab"></button>
-            <button class="test-dot" data-index="2" aria-label="Testimonial 3" role="tab"></button>
-            <button class="test-dot" data-index="3" aria-label="Testimonial 4" role="tab"></button>
-            <button class="test-dot" data-index="4" aria-label="Testimonial 5" role="tab"></button>
-            <button class="test-dot" data-index="5" aria-label="Testimonial 6" role="tab"></button>
-            <button class="test-dot" data-index="6" aria-label="Testimonial 7" role="tab"></button>
         </div>
     </section>
 
@@ -457,29 +352,24 @@
 
     <!-- == Stripe Donation Button == -->
     <section class="scholarship-section">
-        <div class="scholarship-card">
-            <div class="scholarship-info">
-                <span class="section-label" style="color: #00d4a8">Community Care</span>
-                <h2>Give the Gift of Therapy</h2>
-                <p>
-                    Your support makes mental health care more accessible for individuals and families facing financial
-                    barriers.
-                </p>
-            </div>
-
-            <div class="scholarship-action">
-
-                <div class="nav-item utility-sep">
-                    <stripe-buy-button buy-button-id="buy_btn_1TJOlEQ30MbEiVYD1q9aeBsh"
-                        publishable-key="pk_live_51THLuFQ30MbEiVYDJyJKlRv8Hxj7cSFNbekG5AwiBlGXWV8YEZuY9AECkcZIDdcS6FUB5wIX4rwpghBJEgdoGiBY00SK1fusFa">
-                    </stripe-buy-button>
-                </div>
+        <div class="scholarship-inner">
+            <div class="section-label section-label--center">Community Care</div>
+            <h2 class="scholarship-heading">Give the Gift of <em>Therapy</em></h2>
+            <p class="scholarship-copy">
+                Your support makes mental health care more accessible for individuals and families facing financial
+                barriers.
+            </p>
+            <div class="scholarship-stripe-wrap">
+                <stripe-buy-button buy-button-id="buy_btn_1TJOlEQ30MbEiVYD1q9aeBsh"
+                    publishable-key="pk_live_51THLuFQ30MbEiVYDJyJKlRv8Hxj7cSFNbekG5AwiBlGXWV8YEZuY9AECkcZIDdcS6FUB5wIX4rwpghBJEgdoGiBY00SK1fusFa">
+                </stripe-buy-button>
             </div>
         </div>
     </section>
 
     <!-- ══ FOOTER ══ -->
     <footer>
+        <div class="container">
         <div class="footer-top">
             <div class="footer-brand">
                 <img class="footer-logo" src="images/logo.webp" alt="Journey Embraced Counseling">
@@ -495,9 +385,8 @@
                 <h5>Navigate</h5>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#counselors">Our Team</a></li>
                     <li><a href="index.html#services">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
@@ -505,18 +394,19 @@
             <div class="footer-col">
                 <h5>Our Specialists</h5>
                 <ul>
-                    <li><a href="index.html#tanise">Tanise Smith</a></li>
-                    <li><a href="index.html#natasha">Natasha Harris-Butler</a></li>
-                    <li><a href="index.html#andrea">Andrea Campbell</a></li>
-                    <li><a href="index.html#chris">Chris Gudjenov</a></li>
-                    <li><a href="index.html#brie">Brie Byers</a></li>
-                    <li><a href="index.html#cynthia">Cynthia Stokes</a></li>
-                    <li><a href="index.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#tanise">Tanise Smith</a></li>
+                    <li><a href="team.html#natasha">Natasha Harris-Butler</a></li>
+                    <li><a href="team.html#andrea">Andrea Campbell</a></li>
+                    <li><a href="team.html#chris">Chris Gudjenov</a></li>
+                    <li><a href="team.html#brie">Brie Byers</a></li>
+                    <li><a href="team.html#cynthia">Cynthia Stokes</a></li>
+                    <li><a href="team.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#adrian">Adrian Smith</a></li>
                 </ul>
             </div>
             <div class="footer-col footer-contact-info">
                 <h5>Contact</h5>
-                <p>12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216</p>
+                <p>12480 W. 62 Terr, Shawnee, KS</p>
                 <p><a href="tel:8169743389">816-974-3389</a></p>
                 <p><a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a></p>
             </div>
@@ -533,6 +423,7 @@
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
+        </div>
         </div>
     </footer>
 
@@ -570,11 +461,6 @@
                     placeholder="Brief description of what you'd like to work on..."></textarea></div>
             <button class="btn-modal" data-form="booking">Request Appointment</button>
         </div>
-    </div>
-    <div class="chat-input-row">
-        <input class="chat-input" id="chatIn" type="text" placeholder="Type a message..." aria-label="Chat message">
-        <button class="chat-send" id="chatSendBtn" aria-label="Send message">➤</button>
-    </div>
     </div>
 
     <!-- ══ WORKSHOP MODAL 1: CONNECTED ══ -->
