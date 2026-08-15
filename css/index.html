@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Journey Embraced Counseling LLC — Compassionate, insight-driven counseling for individuals, couples, and families. Serving Missouri and Kansas." />
+    <title>Journey Embraced Counseling LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- ══ NAVIGATION ══ -->
+    <nav id="mainNav">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.webp" alt="Journey Embraced Counseling" />
+        </a>
+
+        <div class="nav-center">
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+            <div class="nav-item">
+                <a href="team.html" class="nav-link">Our Team</a>
+            </div>
+            <div class="nav-item">
+                <a href="workshops.html" class="nav-link">Workshops</a>
+            </div>
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-item" style="position: relative">
+                <button class="nav-link" id="contactDropBtn" aria-expanded="false">
+                    Contact Us
+                    <svg viewBox="0 0 10 6" aria-hidden="true">
+                        <path d="M0 0l5 6 5-6z" />
+                    </svg>
+                </button>
+                <div class="contact-drop" id="contactDrop">
+                    <div class="contact-drop-row contact-drop-row--email">
+                        <span class="contact-drop-icon">📧</span>
+                        <a href="mailto:tanise@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
+                    </div>
+                    <div class="contact-drop-row contact-drop-row--phone">
+                        <span class="contact-drop-icon">📞</span>
+                        <a href="tel:8169743389">816-974-3389</a>
+                    </div>
+                </div>
+            </div>
+            <!-- == Stripe Donate Link == -->
+            <div class="nav-item utility-sep">
+                <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="nav-link-utility">Donate</a>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
+            <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ══ MOBILE MENU ══ -->
+    <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
+        <button class="mob-close" id="mobClose" aria-label="Close menu">
+            ✕
+        </button>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
+        <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
+    </div>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+            <div class="hero-tag">✦ Serving Missouri &amp; Kansas</div>
+            <h1>Where <em>Healing</em><br />Begins</h1>
+            <p class="hero-sub">
+                Compassionate, insight-driven counseling for individuals,
+                couples, and families. You don't have to walk through it
+                alone.
+            </p>
+            <div class="hero-btns">
+                <a href="#" class="btn-gold" id="heroBookBtn">Book a Session</a>
+                <a href="team.html" class="btn-text">
+                    Meet our team
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ TICKER ══ -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span class="tick-item">Individual Counseling<span class="tick-sep"></span></span>
+            <span class="tick-item">Couples Therapy<span class="tick-sep"></span></span>
+            <span class="tick-item">Trauma Recovery<span class="tick-sep"></span></span>
+            <span class="tick-item">Narcissistic Abuse Recovery<span class="tick-sep"></span></span>
+            <span class="tick-item">Men's Mental Health<span class="tick-sep"></span></span>
+            <span class="tick-item">Adolescent Support<span class="tick-sep"></span></span>
+            <span class="tick-item">Faith-Based Counseling<span class="tick-sep"></span></span>
+            <span class="tick-item">Life Coaching<span class="tick-sep"></span></span>
+            <span class="tick-item">Athletic Performance<span class="tick-sep"></span></span>
+            <span class="tick-item">Group Therapy<span class="tick-sep"></span></span>
+            <span class="tick-item">Individual Counseling<span class="tick-sep"></span></span>
+            <span class="tick-item">Couples Therapy<span class="tick-sep"></span></span>
+            <span class="tick-item">Trauma Recovery<span class="tick-sep"></span></span>
+            <span class="tick-item">Narcissistic Abuse Recovery<span class="tick-sep"></span></span>
+            <span class="tick-item">Men's Mental Health<span class="tick-sep"></span></span>
+            <span class="tick-item">Adolescent Support<span class="tick-sep"></span></span>
+            <span class="tick-item">Faith-Based Counseling<span class="tick-sep"></span></span>
+            <span class="tick-item">Life Coaching<span class="tick-sep"></span></span>
+            <span class="tick-item">Athletic Performance<span class="tick-sep"></span></span>
+            <span class="tick-item">Group Therapy<span class="tick-sep"></span></span>
+        </div>
+    </div>
+
+    <!-- ══ ABOUT ══ -->
+    <section class="welcome" id="about">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-left reveal">
+                    <div class="section-label">Our Welcome</div>
+                    <h2 class="section-title">
+                        You deserve to feel<br /><em>free again</em>
+                    </h2>
+                </div>
+                <div class="welcome-right reveal">
+                    <p>
+                        Do you feel
+                        <strong>stuck, unmotivated, or overwhelmed?</strong> Is your
+                        mind constantly racing—especially at night—making it hard to
+                        rest? Do you find yourself avoiding conflict, even if it
+                        means accepting less than you deserve?
+                    </p>
+                    <p>
+                        Maybe you're recovering from
+                        <strong>narcissistic abuse</strong>—whether from a partner,
+                        a family member, or in the workplace. Perhaps you're trying
+                        to find balance between work and life, or just navigating a
+                        difficult season.
+                    </p>
+                    <p>
+                        Is your adolescent son or daughter in need of a mentor or
+                        healing space to talk? Are you a man seeking guidance on
+                        identity, purpose, or emotional health? Would you benefit
+                        from counseling that aligns with your
+                        <strong>Christian faith?</strong>
+                    </p>
+                    <p>
+                        Whatever you're facing, you don't have to walk through it
+                        alone. Your goals matter. It's okay to ask for support — and
+                        we're here to walk alongside you on your journey.
+                    </p>
+                    <div class="welcome-stat-block">
+                        <div class="stat-item">
+                            <div class="stat-num">20+</div>
+                            <div class="stat-label">Years of clinical experience across our team</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">Est. 2020</div>
+                            <div class="stat-label">Serving Missouri &amp; Kansas communities</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">MO + KS</div>
+                            <div class="stat-label">Fully licensed in both states</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ AWARDS ══ -->
+    <div class="awards-band">
+        <div class="award-label">Recognition</div>
+        <div class="award-pill">
+            <span class="award-icon">🏆</span>
+            <div>
+                <div class="award-text">
+                    KC People's Choice — Best Therapist
+                </div>
+                <div class="award-year">Finalist 2023 &amp; 2025</div>
+            </div>
+        </div>
+        <div class="award-pill">
+            <span class="award-icon">⚖️</span>
+            <div>
+                <div class="award-text">
+                    Licensed in Missouri &amp; Kansas
+                </div>
+                <div class="award-year">Clinical Supervision Certified</div>
+            </div>
+        </div>
+        <div class="award-pill">
+            <span class="award-icon">🤝</span>
+            <div>
+                <div class="award-text">
+                    In-Person &amp; Virtual Sessions
+                </div>
+                <div class="award-year">
+                    Shawnee, KS · 12480 W. 62 Terr · Ste 101
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ SERVICES ══ -->
+    <section class="services" id="services">
+        <div class="container">
+        <div class="services-header">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title services-title">
+            Specialties &amp; <em>Services</em>
+        </h2>
+        </div>
+        <div class="services-grid">
+            <div class="svc-card reveal">
+                <div class="svc-num">01</div>
+                <div class="svc-title">Individual Counseling</div>
+                <p class="svc-desc">
+                    One-on-one therapy for anxiety, depression, trauma, and
+                    personal growth in a safe, judgment-free space.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">02</div>
+                <div class="svc-title">Couples &amp; Relationship</div>
+                <p class="svc-desc">
+                    Restore harmony and communication. Navigate conflict,
+                    rebuild trust, and grow together.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">03</div>
+                <div class="svc-title">Narcissistic Abuse Recovery</div>
+                <p class="svc-desc">
+                    Specialized support for those healing from emotionally
+                    abusive dynamics with partners, family, or at work.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">04</div>
+                <div class="svc-title">Adolescent Support</div>
+                <p class="svc-desc">
+                    A nurturing space for teens to build resilience, coping
+                    skills, confidence, and emotional health.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">05</div>
+                <div class="svc-title">Men's Mental Health</div>
+                <p class="svc-desc">
+                    Focused support for men navigating identity, purpose,
+                    anxiety, and emotional wellbeing.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">06</div>
+                <div class="svc-title">Faith-Based Counseling</div>
+                <p class="svc-desc">
+                    Counseling that integrates and honors your Christian
+                    faith throughout the healing journey.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">07</div>
+                <div class="svc-title">Group Therapy</div>
+                <p class="svc-desc">
+                    Therapeutic groups for family healing, wounded identity,
+                    co-dependence recovery, and youth music groups.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">08</div>
+                <div class="svc-title">Life Coaching</div>
+                <p class="svc-desc">
+                    Practical guidance for goal setting, self-improvement,
+                    and living with intention and clarity.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">09</div>
+                <div class="svc-title">Athletic Mental Performance</div>
+                <p class="svc-desc">
+                    Certified consulting for adolescent athletes, high
+                    performers, and military personnel.
+                </p>
+            </div>
+            <div class="svc-card reveal">
+                <div class="svc-num">10</div>
+                <div class="svc-title">Clinical Supervision</div>
+                <p class="svc-desc">
+                    Certified clinical supervision for emerging private
+                    practice clinicians in MO &amp; KS.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ══ TESTIMONIAL ══ -->
+    <section class="testimonial">
+        <div class="testimonial-inner reveal">
+            <div class="section-label section-label--center">
+                Client Stories
+            </div>
+            <div class="test-quote" id="testQuote">
+                "Thank you so much for all of your support. I am forever
+                grateful."
+            </div>
+            <div class="test-author">— A Journey Embraced Client</div>
+            <div class="test-dots">
+                <button class="test-dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="test-dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="test-dot" data-index="2" aria-label="Testimonial 3"></button>
+                <button class="test-dot" data-index="3" aria-label="Testimonial 4"></button>
+                <button class="test-dot" data-index="4" aria-label="Testimonial 5"></button>
+                <button class="test-dot" data-index="5" aria-label="Testimonial 6"></button>
+                <button class="test-dot" data-index="6" aria-label="Testimonial 7"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/logo.webp" alt="Journey Embraced Counseling" />
+                <p class="footer-about">
+                    Compassionate, insight-driven counseling for
+                    individuals, couples, and families. Serving Missouri and
+                    Kansas since 2020.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/journeyembracedcounseling/" target="_blank" rel="noopener"
+                        aria-label="Facebook">f</a>
+                    <a href="mailto:tanise@jecounselingkc.com" aria-label="Email us">✉</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Our Specialists</h5>
+                <ul>
+                    <li><a href="team.html#tanise">Tanise Smith</a></li>
+                    <li><a href="team.html#natasha">Natasha Harris-Butler</a></li>
+                    <li><a href="team.html#andrea">Andrea Campbell</a></li>
+                    <li><a href="team.html#chris">Chris Gudjenov</a></li>
+                    <li><a href="team.html#brie">Brie Byers</a></li>
+                    <li><a href="team.html#cynthia">Cynthia Stokes</a></li>
+                    <li><a href="team.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#adrian">Adrian Smith</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact-info">
+                <h5>Contact</h5>
+                <p>12480 W. 62 Terr, Ste 101<br />Shawnee, KS 66216</p>
+                <p><a href="tel:8169743389">816-974-3389</a></p>
+                <p>
+                    <a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-pt-badge">
+            <a href="https://www.psychologytoday.com/us/therapists/tanise-smith-shawnee-ks/755329" target="_blank"
+                rel="noopener">
+                <img loading="lazy" src="images/psychology_today.webp" alt="Verified by Psychology Today" height="52" />
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 Journey Embraced Counseling LLC. All rights
+                reserved.
+            </p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- ══ BOOKING MODAL ══ -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+        <div class="modal">
+            <button class="modal-x" aria-label="Close">✕</button>
+            <div class="modal-h" id="bookingModalTitle">Book a Session</div>
+            <div class="modal-sub">
+                Fill out the form below and we'll be in touch to confirm
+                your appointment.
+            </div>
+            <form name="booking" netlify netlify-honeypot="bot-field" id="bookingForm">
+                <input type="hidden" name="form-name" value="booking" />
+                <p style="display: none">
+                    <label>Don't fill this out: <input name="bot-field" /></label>
+                </p>
+                <div class="fg">
+                    <label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" autocomplete="given-name"
+                            required />
+                        <input type="text" name="last-name" placeholder="Last name" autocomplete="family-name"
+                            required />
+                    </div>
+                </div>
+                <div class="fg">
+                    <label>Email</label><input type="email" name="email" placeholder="your@email.com"
+                        autocomplete="email" required />
+                </div>
+                <div class="fg">
+                    <label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"
+                        autocomplete="tel" />
+                </div>
+                <div class="fg">
+                    <label>Preferred Specialist (Optional)</label>
+                    <select name="specialist" id="counselorSelect">
+                        <option value="">No preference</option>
+                        <option>Tanise Smith</option>
+                        <option>Natasha Harris-Butler</option>
+                        <option>Andrea Campbell</option>
+                        <option>Chris Gudjenov</option>
+                        <option>Brie Byers</option>
+                        <option>Cynthia Stokes</option>
+                        <option>Jonathan Slade</option>
+                    </select>
+                </div>
+                <div class="fg">
+                    <label>Service Type</label>
+                    <select name="service">
+                        <option value="">Select a service...</option>
+                        <option>Individual Counseling</option>
+                        <option>Couples Therapy</option>
+                        <option>Adolescent Support</option>
+                        <option>Faith-Based Counseling</option>
+                        <option>Life Coaching</option>
+                        <option>Narcissistic Abuse Recovery</option>
+                        <option>Men's Mental Health</option>
+                        <option>Group Therapy</option>
+                    </select>
+                </div>
+                <div class="fg">
+                    <label>Message (Optional)</label><textarea name="message"
+                        placeholder="Brief description of what you'd like to work on..."></textarea>
+                </div>
+                <button type="submit" class="btn-modal">
+                    Request Appointment
+                </button>
+            </form>
+            <div id="bookingSuccess" class="modal-success" style="display: none">
+                <div class="success-icon">✓</div>
+                <p>
+                    Thank you! Your request has been received. We'll be in
+                    touch shortly.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

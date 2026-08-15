@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Journey Shop — Explore our thoughtfully selected books, journals, apparel, and therapeutic resources." />
+    <title>Journey Shop | Journey Embraced Counseling LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+</head>
+
+<body>
+    <!-- ══ NAVIGATION ══ -->
+    <nav id="mainNav">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.webp" alt="Journey Embraced Counseling" />
+        </a>
+
+        <div class="nav-center">
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="index.html#services" class="nav-link">Services</a>
+            </div>
+            <div class="nav-item">
+                <a href="team.html" class="nav-link">Our Team</a>
+            </div>
+            <div class="nav-item">
+                <a href="workshops.html" class="nav-link">Workshops</a>
+            </div>
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-item" style="position: relative">
+                <button class="nav-link" id="contactDropBtn" aria-expanded="false">
+                    Contact Us
+                    <svg viewBox="0 0 10 6" aria-hidden="true">
+                        <path d="M0 0l5 6 5-6z" />
+                    </svg>
+                </button>
+                <div class="contact-drop" id="contactDrop">
+                    <div class="contact-drop-row contact-drop-row--email">
+                        <span class="contact-drop-icon">📧</span>
+                        <a href="mailto:tanise@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
+                    </div>
+                    <div class="contact-drop-row contact-drop-row--phone">
+                        <span class="contact-drop-icon">📞</span>
+                        <a href="tel:8169743389">816-974-3389</a>
+                    </div>
+                </div>
+            </div>
+            <!-- == Stripe Donate Link == -->
+            <div class="nav-item utility-sep">
+                <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="nav-link-utility">Donate</a>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="btn-nav-cta" id="bookNavBtn">Book a Session</a>
+            <button class="mob-toggle" id="mobToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ══ MOBILE MENU ══ -->
+    <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
+        <button class="mob-close" id="mobClose" aria-label="Close menu">
+            ✕
+        </button>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="https://donate.stripe.com/bJe28tgr56711Aj9oM2kw00" class="mobile-donate-link">Donate</a>
+        <a href="#" id="mobBook" class="mob-book-link">Book a Session</a>
+    </div>
+
+    <header class="shop-hero">
+        <div class="shop-hero-content">
+            <h1><em style="color: var(--mint);">Journey</em> Shop</h1>
+            <p>Explore our thoughtfully selected books, journals, apparel, and therapeutic resources. These items are designed to encourage healing, growth, and hope beyond the counseling session.</p>
+        </div>
+    </header>
+
+    <!-- Journey Shop -->
+    <main class="shop-container">
+        <div class="product-grid">
+            <!-- Pocket Life Coach Journal -->
+            <div class="product-item">
+                <div class="product-img-wrapper">
+                    <img src="images/merchandise/pocket-life-coach.webp" alt="Life Coach Journal" loading="lazy">
+                </div>
+                <span class="product-category">Books & Journals</span>
+                <h3 class="product-title">Pocket Life Coach</h3>
+                <p class="product-desc">A Christian guided journal for overthinking.</p>
+                <div class="product-byline">
+                    <span class="product-byline-avatar">CS</span>
+                    <span>By Cynthia Stokes, LCC</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$18.99</span>
+                    <a href="https://www.amazon.com/Pocket-Life-Coach-Christian-Overthinking/dp/B0H8JM13S7" target="_blank" rel="noopener" class="product-buy-link">
+                        Buy on Amazon
+                        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Anchored by Grace Book -->
+            <div class="product-item">
+                <div class="product-img-wrapper">
+                    <img src="images/merchandise/anchored-by-grace.webp" alt="Therapeutic Book" loading="lazy">
+                </div>
+                <span class="product-category">Books & Journals</span>
+                <h3 class="product-title">Anchored by Grace</h3>
+                <p class="product-desc">Prayers for keeping an undivided heart after divorce.</p>
+                <div class="product-byline">
+                    <span class="product-byline-avatar">NH</span>
+                    <span>By Natasha Harris-Butler, LCSW</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$11.99</span>
+                    <a href="https://www.amazon.com/Anchored-Grace-Prayers-Keeping-Undivided-ebook/dp/B0F9NBXWT7" target="_blank" rel="noopener" class="product-buy-link">
+                        Buy on Amazon
+                        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="footer-logo" src="images/logo.webp" alt="Journey Embraced Counseling" />
+                <p class="footer-about">
+                    Compassionate, insight-driven counseling for
+                    individuals, couples, and families. Serving Missouri and
+                    Kansas since 2020.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/journeyembracedcounseling/" target="_blank" rel="noopener"
+                        aria-label="Facebook">f</a>
+                    <a href="mailto:tanise@jecounselingkc.com" aria-label="Email us">✉</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Our Specialists</h5>
+                <ul>
+                    <li><a href="team.html#tanise">Tanise Smith</a></li>
+                    <li><a href="team.html#natasha">Natasha Harris-Butler</a></li>
+                    <li><a href="team.html#andrea">Andrea Campbell</a></li>
+                    <li><a href="team.html#chris">Chris Gudjenov</a></li>
+                    <li><a href="team.html#brie">Brie Byers</a></li>
+                    <li><a href="team.html#cynthia">Cynthia Stokes</a></li>
+                    <li><a href="team.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#adrian">Adrian Smith</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact-info">
+                <h5>Contact</h5>
+                <p>12480 W. 62 Terr, Ste 101<br />Shawnee, KS 66216</p>
+                <p><a href="tel:8169743389">816-974-3389</a></p>
+                <p>
+                    <a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-pt-badge">
+            <a href="https://www.psychologytoday.com/us/therapists/tanise-smith-shawnee-ks/755329" target="_blank"
+                rel="noopener">
+                <img loading="lazy" src="images/psychology_today.webp" alt="Verified by Psychology Today" height="52" />
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 Journey Embraced Counseling LLC. All rights
+                reserved.
+            </p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
