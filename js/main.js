@@ -7,6 +7,20 @@
   'use strict';
 
   /* ─────────────────────────────────────────
+     NAV SCROLL EFFECT (glassmorphic on scroll)
+  ───────────────────────────────────────── */
+
+  function initNavScroll() {
+    var nav = document.getElementById('mainNav');
+    if (!nav) return;
+    function onScroll() {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  }
+
+  /* ─────────────────────────────────────────
      MODALS
   ───────────────────────────────────────── */
 
@@ -110,7 +124,7 @@
 
     // Generic booking triggers — no pre-selection
     var bookingTriggers = [
-      'bookNavBtn', 'heroBookBtn', 'welcomeBookBtn', 'teamBookBtn', 'bannerBookBtn'
+      'bookNavBtn', 'heroBookBtn'
     ];
     bookingTriggers.forEach(function (id) {
       var el = document.getElementById(id);
@@ -122,17 +136,6 @@
           openModal('booking');
         });
       }
-    });
-
-    // Individual counselor buttons — pre-select counselor
-    document.querySelectorAll('.book-counselor-btn').forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        var counselor = btn.getAttribute('data-counselor');
-        var select = document.getElementById('counselorSelect');
-        if (select && counselor) select.value = counselor;
-        openModal('booking');
-      });
     });
 
     var mobBook = document.getElementById('mobBook');
@@ -157,51 +160,6 @@
   }
 
   /* ─────────────────────────────────────────
-     TEAM DROPDOWN
-  ───────────────────────────────────────── */
-
-  function initTeamDropdown() {
-    var btn = document.getElementById('teamDropBtn');
-    if (!btn) return;
-
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var item   = btn.closest('.nav-item');
-      var isOpen = item.classList.contains('open');
-
-      // Close all open dropdowns first
-      document.querySelectorAll('.nav-item.open').forEach(function (el) {
-        el.classList.remove('open');
-      });
-      btn.setAttribute('aria-expanded', 'false');
-
-      // Toggle this one
-      if (!isOpen) {
-        item.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    // Close dropdown on outside click
-    document.addEventListener('click', function () {
-      document.querySelectorAll('.nav-item.open').forEach(function (el) {
-        el.classList.remove('open');
-      });
-      btn.setAttribute('aria-expanded', 'false');
-    });
-
-    // Close dropdown when a counselor link is clicked
-    document.querySelectorAll('.drop-card').forEach(function (card) {
-      card.addEventListener('click', function () {
-        document.querySelectorAll('.nav-item.open').forEach(function (el) {
-          el.classList.remove('open');
-        });
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
-  /* ─────────────────────────────────────────
      MOBILE MENU
   ───────────────────────────────────────── */
 
@@ -210,6 +168,7 @@
     var toggle = document.getElementById('mobToggle');
     if (menu)   menu.classList.add('open');
     if (toggle) { toggle.classList.add('open'); toggle.setAttribute('aria-expanded', 'true'); }
+    document.body.classList.add('mob-open');
     document.body.style.overflow = 'hidden';
   }
 
@@ -218,6 +177,7 @@
     var toggle = document.getElementById('mobToggle');
     if (menu)   menu.classList.remove('open');
     if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    document.body.classList.remove('mob-open');
     document.body.style.overflow = '';
   }
 
@@ -250,8 +210,6 @@
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
       var isOpen = drop.classList.contains('contact-drop--open');
-      // Close team dropdown first
-      document.querySelectorAll('.nav-item.open').forEach(function(el){ el.classList.remove('open'); });
       if (!isOpen) {
         drop.classList.add('contact-drop--open');
         btn.setAttribute('aria-expanded', 'true');
@@ -289,15 +247,89 @@
   }
 
   /* ─────────────────────────────────────────
+     TEAM QUICK-NAV SCROLL SPY
+  ───────────────────────────────────────── */
+
+  function initTeamNavSpy() {
+    var sections = document.querySelectorAll('.bio-section');
+    var navLinks = document.querySelectorAll('.team-nav a');
+    if (!sections.length || !navLinks.length) return;
+
+    var navObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
+          navLinks.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-80px 0px -60% 0px' });
+
+    sections.forEach(function (sec) { navObserver.observe(sec); });
+  }
+
+  /* ─────────────────────────────────────────
+     TESTIMONIAL CAROUSEL
+  ───────────────────────────────────────── */
+
+  function initTestimonialCarousel() {
+    var quoteEl = document.getElementById('testQuote');
+    var dots = document.querySelectorAll('.test-dot');
+    if (!quoteEl || !dots.length) return;
+
+    var quotes = [
+      '"Thank you so much for all of your support. I am forever grateful."',
+      '"You\'re awesome, and I appreciate your approach."',
+      '"Thank you for not judging me."',
+      '"You literally saved my life."',
+      '"I thank God I found you. You helped me find the strength to heal after that toxic relationship."',
+      '"You really connected with my daughter from the jump."',
+      '"Our sessions have given me restored hopefulness."'
+    ];
+    var current = 0;
+    var timer;
+
+    function showTestimonial(i) {
+      quoteEl.style.opacity = 0;
+      setTimeout(function () {
+        quoteEl.textContent = quotes[i];
+        quoteEl.style.opacity = 1;
+      }, 300);
+      dots.forEach(function (d) { d.classList.remove('active'); });
+      dots[i].classList.add('active');
+      current = i;
+    }
+
+    function startAutoRotate() {
+      timer = setInterval(function () {
+        showTestimonial((current + 1) % quotes.length);
+      }, 6000);
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        clearInterval(timer);
+        showTestimonial(i);
+        startAutoRotate();
+      });
+    });
+
+    startAutoRotate();
+  }
+
+  /* ─────────────────────────────────────────
      INIT
   ───────────────────────────────────────── */
 
   document.addEventListener('DOMContentLoaded', function () {
+    initNavScroll();
     initModals();
-    initTeamDropdown();
     initContactDropdown();
     initMobileMenu();
     initScrollReveal();
+    initTeamNavSpy();
+    initTestimonialCarousel();
   });
 
 })();

@@ -1,25 +1,4 @@
 (function () {
-  // Carousel
-  var slides = document.querySelectorAll(".test-slide");
-  var dots = document.querySelectorAll(".test-dot");
-  var cur = 0;
-  function goTo(n) {
-    slides[cur].classList.remove("active");
-    dots[cur].classList.remove("active");
-    cur = n;
-    slides[cur].classList.add("active");
-    dots[cur].classList.add("active");
-  }
-  dots.forEach(function (d) {
-    d.addEventListener("click", function () {
-      goTo(+d.getAttribute("data-index"));
-    });
-  });
-  if (slides.length)
-    setInterval(function () {
-      goTo((cur + 1) % slides.length);
-    }, 5000);
-
   // Workshop form submissions
   function bindForm(fId, sId, mId, lbl) {
     var f = document.getElementById(fId);
