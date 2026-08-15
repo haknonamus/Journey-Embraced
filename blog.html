@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/blog.css" />
@@ -19,7 +19,7 @@
 <body>
 <!-- ══ NAVIGATION ══ -->
     <nav id="mainNav">
-        <a href="#" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <img src="images/logo.webp" alt="Journey Embraced Counseling" />
         </a>
 
@@ -28,69 +28,10 @@
                 <a href="index.html" class="nav-link">Home</a>
             </div>
             <div class="nav-item">
-                <a href="#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
             </div>
             <div class="nav-item">
-                <button class="nav-link" id="teamDropBtn" aria-expanded="false" aria-haspopup="true">
-                    Our Team
-                    <svg viewBox="0 0 10 6" aria-hidden="true">
-                        <path d="M0 0l5 6 5-6z" />
-                    </svg>
-                </button>
-                <div class="mega-drop" role="menu">
-                    <a class="drop-card" href="#tanise" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/tanise.webp" alt="Tanise Smith" />
-                        <div class="drop-info">
-                            <div class="drop-name">Tanise Smith</div>
-                            <div class="drop-role">MS, LCPC · Founder</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#natasha" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/natasha.webp" alt="Natasha Harris-Butler" />
-                        <div class="drop-info">
-                            <div class="drop-name">Natasha Harris-Butler</div>
-                            <div class="drop-role">LCSW, LSCSW</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#chris" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/chris.webp" alt="Chris Gudjenov" />
-                        <div class="drop-info">
-                            <div class="drop-name">Chris Gudjenov</div>
-                            <div class="drop-role">MS, LPC · Athletes & Men</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#brie" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/brie.webp" alt="Chris Gudjenov" />
-                        <div class="drop-info">
-                            <div class="drop-name">Brie Byers</div>
-                            <div class="drop-role">MS, LPC</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#cynthia" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/cynthia.webp" alt="Cynthia Stokes" />
-                        <div class="drop-info">
-                            <div class="drop-name">Cynthia Stokes</div>
-                            <div class="drop-role">LCC · Life Coach</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#jonathan" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/jonathan.webp" alt="Jonathan Slade" />
-                        <div class="drop-info">
-                            <div class="drop-name">Jonathan Slade</div>
-                            <div class="drop-role">B.Th. · Pastoral Coach</div>
-                        </div>
-                    </a>
-                    <a class="drop-card" href="#adrian" role="menuitem">
-                        <img loading="lazy" class="drop-thumb" src="images/profile/adrian.webp" alt="Adrian Smith" />
-                        <div class="drop-info">
-                            <div class="drop-name">Adrian Smith</div>
-                            <div class="drop-role">Insurance & Billing Specialist</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-item">
-                <a href="#services" class="nav-link">Services</a>
+                <a href="team.html" class="nav-link">Our Team</a>
             </div>
             <div class="nav-item">
                 <a href="workshops.html" class="nav-link">Workshops</a>
@@ -113,7 +54,7 @@
                         <span class="contact-drop-icon">📧</span>
                         <a href="mailto:tanise@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
                     </div>
-                    <div class="contact-drop-row">
+                    <div class="contact-drop-row contact-drop-row--phone">
                         <span class="contact-drop-icon">📞</span>
                         <a href="tel:8169743389">816-974-3389</a>
                     </div>
@@ -138,9 +79,8 @@
             ✕
         </button>
         <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#counselors">Our Team</a>
         <a href="index.html#services">Services</a>
+        <a href="team.html">Our Team</a>
         <a href="workshops.html">Workshops</a>
         <a href="blog.html">Blog</a>
         <a href="shop.html">Shop</a>
@@ -162,94 +102,23 @@
 
     <!-- ══ BLOG GRID ══ -->
     <section class="blog-grid-section">
-        <div class="blog-grid">
-            <!-- Post 1 -->
-            <a href="post-narcissists-therapy.html" class="blog-card">
-                <img class="blog-card-img"
-                    src="https://static.wixstatic.com/media/f3df2a_97ab278cfcd94450b3c3a21420873f29~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/f3df2a_97ab278cfcd94450b3c3a21420873f29~mv2.webp"
-                    alt="Why You Might Be Drawn to Narcissists—Even in Therapy" />
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <img class="blog-card-author-img"
-                            src="https://static.wixstatic.com/media/f3df2a_c4966da03c5444bfa4be684ac20dc3af~mv2.jpg/v1/fill/w_64,h_64,al_c,q_80,enc_avif,quality_auto/f3df2a_c4966da03c5444bfa4be684ac20dc3af~mv2.jpg"
-                            alt="Tanise Smith" />
-                        <span class="blog-card-author">Tanise I. Smith, MS, LCPC</span>
-                        <span class="blog-card-date">Sep 3, 2025</span>
-                    </div>
-                    <h2>
-                        Why You Might Be Drawn to Narcissists—Even in
-                        Therapy
-                    </h2>
-                    <p>
-                        How unexamined patterns can lead survivors to choose
-                        unsafe mental health providers. Choose wisely who
-                        helps you.
-                    </p>
-                    <div class="blog-card-footer">
-                        <span class="blog-read-time">2 min read</span>
-                        <span class="blog-read-more">Read More →</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Post 2 -->
-            <a href="post-say-no.html" class="blog-card">
-                <img class="blog-card-img"
-                    src="https://static.wixstatic.com/media/nsplsh_32547a5375515a4f486534~mv2_d_3019_4025_s_4_2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/nsplsh_32547a5375515a4f486534~mv2_d_3019_4025_s_4_2.webp"
-                    alt="Say No: Improve Your Mental and Physical Well-Being" />
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <img class="blog-card-author-img"
-                            src="https://static.wixstatic.com/media/f3df2a_ed8cdbc0320a438393f0426898f3b0ae~mv2.jpg/v1/fill/w_64,h_64,al_c,q_80,enc_avif,quality_auto/f3df2a_ed8cdbc0320a438393f0426898f3b0ae~mv2.jpg"
-                            alt="Cynthia Stokes" />
-                        <span class="blog-card-author">Cynthia Stokes, LCC</span>
-                        <span class="blog-card-date">Jan 31, 2025</span>
-                    </div>
-                    <h2>
-                        Say No: Improve Your Mental and Physical Well-Being
-                    </h2>
-                    <p>
-                        Take control of your health and improve your quality
-                        of life by activating your No. Setting boundaries
-                        starts here.
-                    </p>
-                    <div class="blog-card-footer">
-                        <span class="blog-read-time">4 min read</span>
-                        <span class="blog-read-more">Read More →</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Post 3 -->
-            <a href="post-smart-goals.html" class="blog-card">
-                <img class="blog-card-img"
-                    src="https://static.wixstatic.com/media/nsplsh_63595f54434b723562656b~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/nsplsh_63595f54434b723562656b~mv2.webp"
-                    alt="Wanting Your Goals to Stick? Make them SMART!" />
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <img class="blog-card-author-img"
-                            src="https://static.wixstatic.com/media/f3df2a_ed8cdbc0320a438393f0426898f3b0ae~mv2.jpg/v1/fill/w_64,h_64,al_c,q_80,enc_avif,quality_auto/f3df2a_ed8cdbc0320a438393f0426898f3b0ae~mv2.jpg"
-                            alt="Cynthia Stokes" />
-                        <span class="blog-card-author">Cynthia Stokes, LCC</span>
-                        <span class="blog-card-date">Dec 19, 2024</span>
-                    </div>
-                    <h2>Wanting Your Goals to Stick? Make them SMART!</h2>
-                    <p>
-                        Learn how to make your goals SMART using simple
-                        steps and why you get better results — applicable to
-                        any resolution.
-                    </p>
-                    <div class="blog-card-footer">
-                        <span class="blog-read-time">3 min read</span>
-                        <span class="blog-read-more">Read More →</span>
-                    </div>
-                </div>
-            </a>
+        <div class="blog-topics" id="blogTopics">
+            <button class="blog-topic active" data-topic="all">All</button>
+            <button class="blog-topic" data-topic="narcissistic-abuse-recovery">Narcissistic Abuse Recovery</button>
+            <button class="blog-topic" data-topic="self-care">Self-Care</button>
+            <button class="blog-topic" data-topic="life-coaching">Life Coaching</button>
         </div>
+
+        <div id="blogFeaturedSlot"></div>
+
+        <div class="blog-river" id="blogRiver"></div>
+
+        <p class="blog-empty" id="blogEmpty" style="display: none">No posts in this topic yet — check back soon.</p>
     </section>
 
     <!-- ══ FOOTER ══ -->
     <footer>
+        <div class="container">
         <div class="footer-top">
             <div class="footer-brand">
                 <img class="footer-logo" src="images/logo.webp" alt="Journey Embraced Counseling" />
@@ -268,9 +137,8 @@
                 <h5>Navigate</h5>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#counselors">Our Team</a></li>
                     <li><a href="index.html#services">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
@@ -278,13 +146,14 @@
             <div class="footer-col">
                 <h5>Our Specialists</h5>
                 <ul>
-                    <li><a href="index.html#tanise">Tanise Smith</a></li>
-                    <li><a href="index.html#natasha">Natasha Harris-Butler</a></li>
-                    <li><a href="index.html#andrea">Andrea Campbell</a></li>
-                    <li><a href="index.html#chris">Chris Gudjenov</a></li>
-                    <li><a href="index.html#brie">Brie Byers</a></li>
-                    <li><a href="index.html#cynthia">Cynthia Stokes</a></li>
-                    <li><a href="index.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#tanise">Tanise Smith</a></li>
+                    <li><a href="team.html#natasha">Natasha Harris-Butler</a></li>
+                    <li><a href="team.html#andrea">Andrea Campbell</a></li>
+                    <li><a href="team.html#chris">Chris Gudjenov</a></li>
+                    <li><a href="team.html#brie">Brie Byers</a></li>
+                    <li><a href="team.html#cynthia">Cynthia Stokes</a></li>
+                    <li><a href="team.html#jonathan">Jonathan Slade</a></li>
+                    <li><a href="team.html#adrian">Adrian Smith</a></li>
                 </ul>
             </div>
             <div class="footer-col footer-contact-info">
@@ -298,8 +167,9 @@
         </div>
         <div class="footer-pt-badge">
             <a href="https://www.psychologytoday.com/us/therapists/tanise-smith-shawnee-ks/755329" target="_blank"
-                rel="noopener"><img loading="lazy" src="images/psychology_today.webp" alt="Verified by Psychology Today"
-                    height="52" /></a>
+                rel="noopener">
+                <img loading="lazy" src="images/psychology_today.webp" alt="Verified by Psychology Today" height="52" />
+            </a>
         </div>
         <div class="footer-bottom">
             <p>
@@ -307,8 +177,10 @@
                 reserved.
             </p>
             <div>
-                <a href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
             </div>
+        </div>
         </div>
     </footer>
 
@@ -358,6 +230,7 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/blog-filter.js"></script>
 </body>
 
 </html>
