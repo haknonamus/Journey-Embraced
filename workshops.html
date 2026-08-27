@@ -7,6 +7,19 @@
     <meta name="description"
         content="Community Workshops — Journey Embraced Counseling LLC. Connected: Strengthening the Mother-Daughter Bond. A 4-part small group experience.">
     <title>Community Workshops | Journey Embraced Counseling LLC</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jecounselingkc.com/workshops.html" />
+    <meta property="og:title" content="Community Workshops | Journey Embraced Counseling LLC" />
+    <meta property="og:description"
+        content="Community workshops and therapeutic groups from Journey Embraced Counseling LLC." />
+    <meta property="og:image" content="https://jecounselingkc.com/images/og-share.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Community Workshops | Journey Embraced Counseling LLC" />
+    <meta name="twitter:description"
+        content="Community workshops and therapeutic groups from Journey Embraced Counseling LLC." />
+    <meta name="twitter:image" content="https://jecounselingkc.com/images/og-share.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,6 +30,7 @@
 </head>
 
 <body>
+    <div id="scrollProgress"></div>
 
     <!-- ══ NAVIGATION ══ -->
     <nav id="mainNav">
@@ -51,7 +65,7 @@
                 <div class="contact-drop" id="contactDrop">
                     <div class="contact-drop-row contact-drop-row--email">
                         <span class="contact-drop-icon">📧</span>
-                        <a href="mailto:cstokes@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
+                        <a href="mailto:tanise@jecounselingkc.com">cstokes&#64;jecounselingkc.com</a>
                     </div>
                     <div class="contact-drop-row contact-drop-row--phone">
                         <span class="contact-drop-icon">📞</span>
@@ -126,7 +140,7 @@
 
                 <div style="margin-top: 40px;">
                     <button class="btn-register"
-                        data-open-modal="connected">Reserve
+                        data-open-modal="stitched">Reserve
                         Your Spot</button>
                 </div>
 
@@ -446,13 +460,13 @@
     </div>
 
     <!-- ══ WORKSHOP MODAL 1: CONNECTED ══ -->
-    <div class="modal-overlay" id="connectedModal" role="dialog" aria-modal="true">
+    <div class="modal-overlay" id="stitchedModal" role="dialog" aria-modal="true">
         <div class="modal">
             <button class="modal-x">✕</button>
             <div class="modal-h">Reserve Your Spot</div>
             <div class="modal-sub">Stitched on Purpose<br>Meets on Saturdays<br>$45 per session</div>
-            <form name="workshop-connected" netlify netlify-honeypot="bot-field" id="connectedForm">
-                <input type="hidden" name="form-name" value="workshop-connected">
+            <form name="workshop-stitched" netlify netlify-honeypot="bot-field" id="stitchedForm">
+                <input type="hidden" name="form-name" value="workshop-stitched">
                 <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
                 <div class="fg"><label>Your Name</label>
                     <div class="fg-row">
@@ -476,7 +490,7 @@
                         placeholder="Any questions or notes for us..."></textarea></div>
                 <button type="submit" class="btn-modal">Reserve My Spot</button>
             </form>
-            <div id="connectedSuccess" class="modal-success" style="display:none;">
+            <div id="stitchedSuccess" class="modal-success" style="display:none;">
                 <div class="success-icon">&#10003;</div>
                 <p>Thank you! Your spot request has been received. We will be in touch shortly.</p>
             </div>

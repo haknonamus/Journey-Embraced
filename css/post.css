@@ -215,3 +215,15 @@
         grid-template-columns: 1fr;
     }
 }
+
+.smart-highlight {
+    background: var(--warm);
+    border-left: 4px solid var(--purple);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+.smart-highlight p {
+    margin: 0;
+    color: var(--ink);
+}

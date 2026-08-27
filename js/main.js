@@ -207,16 +207,34 @@
     var drop = document.getElementById('contactDrop');
     if (!btn || !drop) return;
 
+    /* Move out of <nav> so its backdrop-filter isn't nested inside nav's
+       own backdrop-filter — nested backdrop-filter is unreliable across
+       browsers (and known-buggy in some, like Zen Browser). */
+    document.body.appendChild(drop);
+    drop.style.position = 'fixed';
+
+    function positionDrop() {
+      var rect = btn.getBoundingClientRect();
+      drop.style.top = (rect.bottom + 10) + 'px';
+      drop.style.right = (window.innerWidth - rect.right) + 'px';
+      drop.style.left = 'auto';
+    }
+
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
       var isOpen = drop.classList.contains('contact-drop--open');
       if (!isOpen) {
+        positionDrop();
         drop.classList.add('contact-drop--open');
         btn.setAttribute('aria-expanded', 'true');
       } else {
         drop.classList.remove('contact-drop--open');
         btn.setAttribute('aria-expanded', 'false');
       }
+    });
+
+    window.addEventListener('resize', function () {
+      if (drop.classList.contains('contact-drop--open')) positionDrop();
     });
 
     document.addEventListener('click', function () {
@@ -318,6 +336,85 @@
     startAutoRotate();
   }
 
+
+
+  /* ─────────────────────────────────────────
+     CURSOR SPOTLIGHT
+  ───────────────────────────────────────── */
+
+  function initCursorSpotlight() {
+    document.querySelectorAll('.hero, .team-hero, .blog-hero, .post-hero, .shop-hero, .workshops-hero').forEach(function (el) {
+      el.addEventListener('mousemove', function (e) {
+        var rect = el.getBoundingClientRect();
+        el.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+        el.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+      });
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     PARALLAX IMAGES
+  ───────────────────────────────────────── */
+
+  function initScrollEffects() {
+    var parallaxEls = document.querySelectorAll('.bio-photo-wrap, .post-hero-img, .blog-featured-img');
+    var progressBar = document.getElementById('scrollProgress');
+    if (!parallaxEls.length && !progressBar) return;
+
+    var ticking = false;
+
+    function update() {
+      if (parallaxEls.length) {
+        parallaxEls.forEach(function (el) {
+          var rect = el.getBoundingClientRect();
+          var speed = 0.06;
+          var offset = (window.innerHeight - rect.top) * speed;
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.style.transform = 'translateY(' + offset + 'px)';
+          }
+        });
+      }
+      if (progressBar) {
+        var scrolled = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+        progressBar.style.width = (scrolled * 100) + '%';
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(update);
+        ticking = true;
+      }
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     HERO TEXT SCRAMBLE
+  ───────────────────────────────────────── */
+
+  /* ─────────────────────────────────────────
+     MAGNETIC BUTTONS
+  ───────────────────────────────────────── */
+
+  function initMagneticButtons() {
+    document.querySelectorAll('.btn-gold, .btn-nav-cta, .btn-register, .btn-modal, .product-buy-link').forEach(function (btn) {
+      btn.addEventListener('mousemove', function (e) {
+        var rect = btn.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = 'translate(' + (x * 0.2) + 'px, ' + (y * 0.2) + 'px)';
+      });
+      btn.addEventListener('mouseleave', function () {
+        btn.style.transform = '';
+      });
+    });
+  }
+
+  /* ─────────────────────────────────────────
+     SCROLL PROGRESS BAR
+  ───────────────────────────────────────── */
+
   /* ─────────────────────────────────────────
      INIT
   ───────────────────────────────────────── */
@@ -330,6 +427,9 @@
     initScrollReveal();
     initTeamNavSpy();
     initTestimonialCarousel();
+    initCursorSpotlight();
+    initScrollEffects();
+    initMagneticButtons();
   });
 
 })();
