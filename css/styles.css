@@ -45,6 +45,19 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
+/* ── Film Grain Overlay ── */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+
 .container {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -54,14 +67,46 @@ body {
 /* Reveal */
 .reveal {
     opacity: 0;
-    transform: translateY(24px);
-    transition:
-        opacity 0.65s ease,
-        transform 0.65s ease;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal.visible {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
+}
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+.reveal-scale { transform: scale(0.92); }
+.reveal-left.visible,
+.reveal-right.visible,
+.reveal-scale.visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+.services-grid .svc-card.reveal {
+    transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+
+/* ── Cursor Spotlight on Dark Heroes ── */
+.hero::after,
+.team-hero::after,
+.blog-hero::after,
+.post-hero::after,
+.shop-hero::after,
+.workshops-hero::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0,212,168,0.08) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    left: var(--mouse-x, 50%);
+    top: var(--mouse-y, 50%);
+    transition: left 0.3s ease-out, top 0.3s ease-out;
+    z-index: 1;
 }
 
 /* Labels */
@@ -121,6 +166,9 @@ body {
 .btn-gold:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 30px rgba(0, 212, 168, 0.3);
+}
+.btn-gold, .btn-nav-cta, .btn-register, .btn-modal, .product-buy-link {
+    transition: transform 0.15s ease-out, box-shadow 0.2s, background 0.2s;
 }
 
 .btn-text {
@@ -191,10 +239,13 @@ nav {
     height: var(--nav-height);
     transition:
         background 0.4s,
-        box-shadow 0.4s;
+        box-shadow 0.4s,
+        backdrop-filter 0.4s;
 }
 nav.scrolled {
-    background: var(--ink);
+    background: rgba(18, 18, 26, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 body.mob-open nav {
@@ -377,7 +428,8 @@ body.mob-open nav {
 .mob-menu.open {
     transform: translateX(0);
 }
-.mob-menu a {
+.mob-menu a,
+.mob-menu .mob-book-link {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 400;
@@ -385,7 +437,23 @@ body.mob-open nav {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.2s;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, color 0.2s;
 }
+.mob-menu.open a,
+.mob-menu.open .mob-book-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mob-menu.open a:nth-child(2) { transition-delay: 0.05s; }
+.mob-menu.open a:nth-child(3) { transition-delay: 0.10s; }
+.mob-menu.open a:nth-child(4) { transition-delay: 0.15s; }
+.mob-menu.open a:nth-child(5) { transition-delay: 0.20s; }
+.mob-menu.open a:nth-child(6) { transition-delay: 0.25s; }
+.mob-menu.open a:nth-child(7) { transition-delay: 0.30s; }
+.mob-menu.open a:nth-child(8) { transition-delay: 0.35s; }
+.mob-menu.open .mob-book-link { transition-delay: 0.40s; }
 .mob-menu a:hover {
     color: var(--mint);
 }
@@ -537,6 +605,23 @@ body.mob-open nav {
     to {
         transform: translateX(-50%);
     }
+}
+
+
+/* ── Breathing Hero Animation ── */
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 20%;
+    background: radial-gradient(circle, rgba(0,212,168,0.15) 0%, transparent 70%);
+    animation: breathe 19s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes breathe {
+    0%, 100% { transform: scale(0.9); opacity: 0.3; }
+    21% { transform: scale(1.1); opacity: 0.6; }
+    58% { transform: scale(1.1); opacity: 0.6; }
+    100% { transform: scale(0.9); opacity: 0.3; }
 }
 
 /* ── Welcome ── */
@@ -736,23 +821,22 @@ body.mob-open nav {
     position: sticky;
     top: var(--nav-height);
     z-index: 100;
-    background: rgba(246, 245, 242, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--stone);
-    padding: 1rem 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-.team-nav::-webkit-scrollbar {
-    display: none;
 }
 .team-nav-inner {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     min-width: max-content;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    background: rgba(246, 245, 242, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--stone);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.team-nav-inner::-webkit-scrollbar {
+    display: none;
 }
 .team-nav a {
     font-size: 0.78rem;
@@ -831,6 +915,9 @@ body.mob-open nav {
     display: block;
     filter: saturate(0.9) contrast(1.02);
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bio-photo-wrap {
+    transition: transform 0.1s linear;
 }
 .bio-visual:hover .bio-photo-wrap img {
     transform: scale(1.03);
@@ -1353,11 +1440,11 @@ footer {
 
 /* ── Contact Us Dropdown ── */
 .contact-drop {
-    position: absolute;
-    top: calc(var(--nav-height) + 2px);
-    right: 0;
-    background: rgba(10, 10, 16, 0.98);
-    border: 1px solid rgba(0, 212, 168, 0.2);
+    position: fixed;
+    background: rgba(18, 18, 26, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-top: 2px solid var(--mint);
     padding: 1.25rem 1.5rem;
     min-width: 280px;
@@ -1367,8 +1454,8 @@ footer {
     transition:
         opacity 0.2s ease,
         transform 0.2s ease;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    z-index: 200;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    z-index: 1500;
 }
 .contact-drop--open {
     opacity: 1;
@@ -1466,4 +1553,22 @@ footer {
     font-size: 0.95rem;
     line-height: 1.7;
     color: var(--ink);
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--mint); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--mint-light); }
+
+/* ── Scroll Progress Bar ── */
+#scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--mint), var(--purple));
+    z-index: 10000;
+    width: 0%;
+    transition: width 0.1s;
 }
