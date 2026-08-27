@@ -253,8 +253,17 @@
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          var el = entry.target;
+          el.classList.add('visible');
+          observer.unobserve(el);
+          // Once the staggered entrance transition finishes, zero out --i so
+          // the delay doesn't linger and affect later hover transitions.
+          el.addEventListener('transitionend', function clearStagger(e) {
+            if (e.target === el) {
+              el.style.setProperty('--i', 0);
+              el.removeEventListener('transitionend', clearStagger);
+            }
+          });
         }
       });
     }, { threshold: 0.08 });
