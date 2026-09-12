@@ -399,6 +399,7 @@
                     <li><a href="team.html#andrea">Andrea Campbell</a></li>
                     <li><a href="team.html#chris">Chris Gudjenov</a></li>
                     <li><a href="team.html#brie">Brie Byers</a></li>
+                    <li><a href="team.html#kamille">KaMille Washington</a></li>
                     <li><a href="team.html#cynthia">Cynthia Stokes</a></li>
                     <li><a href="team.html#jonathan">Jonathan Slade</a></li>
                     <li><a href="team.html#adrian">Adrian Smith</a></li>
@@ -406,7 +407,7 @@
             </div>
             <div class="footer-col footer-contact-info">
                 <h5>Contact</h5>
-                <p>12480 W. 62 Terr, Shawnee, KS</p>
+                <p>12480 W. 62 Terr, Ste 101<br>Shawnee, KS 66216</p>
                 <p><a href="tel:8169743389">816-974-3389</a></p>
                 <p><a href="mailto:tanise@jecounselingkc.com">tanise&#64;jecounselingkc.com</a></p>
             </div>
@@ -418,7 +419,7 @@
             </a>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Journey Embraced Counseling LLC. All rights reserved.</p>
+            <p>&copy; 2026 Journey Embraced Counseling LLC. All rights reserved.</p>
             <div>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
@@ -433,33 +434,48 @@
             <button class="modal-x" aria-label="Close">✕</button>
             <div class="modal-h" id="bookingModalTitle">Book a Session</div>
             <div class="modal-sub">Fill out the form below and we'll be in touch to confirm your appointment.</div>
-            <div class="fg">
-                <label>Your Name</label>
-                <div class="fg-row">
-                    <input type="text" placeholder="First name" autocomplete="given-name">
-                    <input type="text" placeholder="Last name" autocomplete="family-name">
+            <form name="booking" netlify netlify-honeypot="bot-field" id="bookingForm">
+                <input type="hidden" name="form-name" value="booking" />
+                <p style="display: none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+                <div class="fg">
+                    <label>Your Name</label>
+                    <div class="fg-row">
+                        <input type="text" name="first-name" placeholder="First name" autocomplete="given-name"
+                            required />
+                        <input type="text" name="last-name" placeholder="Last name" autocomplete="family-name"
+                            required />
+                    </div>
                 </div>
+                <div class="fg">
+                    <label>Email</label><input type="email" name="email" placeholder="your@email.com"
+                        autocomplete="email" required />
+                </div>
+                <div class="fg">
+                    <label>Phone</label><input type="tel" name="phone" placeholder="(816) 000-0000"
+                        autocomplete="tel" />
+                </div>
+                <div class="fg">
+                    <label>Service Type</label>
+                    <select name="service">
+                        <option value="">Select a service...</option>
+                        <option>Individual Counseling</option>
+                        <option>Couples Therapy</option>
+                        <option>Adolescent Support</option>
+                        <option>Faith-Based Counseling</option>
+                        <option>Life Coaching</option>
+                        <option>Narcissistic Abuse Recovery</option>
+                        <option>Men's Mental Health</option>
+                        <option>Group Therapy</option>
+                    </select>
+                </div>
+                <div class="fg"><label>Message (Optional)</label><textarea name="message"
+                        placeholder="Brief description of what you'd like to work on..."></textarea></div>
+                <button type="submit" class="btn-modal">Request Appointment</button>
+            </form>
+            <div id="bookingSuccess" class="modal-success" style="display:none;">
+                <div class="success-icon">✓</div>
+                <p>Thank you! Your request has been received. We'll be in touch shortly.</p>
             </div>
-            <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" autocomplete="email">
-            </div>
-            <div class="fg"><label>Phone</label><input type="tel" placeholder="(816) 000-0000" autocomplete="tel"></div>
-            <div class="fg">
-                <label>Service Type</label>
-                <select>
-                    <option value="">Select a service...</option>
-                    <option>Individual Counseling</option>
-                    <option>Couples Therapy</option>
-                    <option>Adolescent Support</option>
-                    <option>Faith-Based Counseling</option>
-                    <option>Life Coaching</option>
-                    <option>Narcissistic Abuse Recovery</option>
-                    <option>Men's Mental Health</option>
-                    <option>Group Therapy</option>
-                </select>
-            </div>
-            <div class="fg"><label>Message (Optional)</label><textarea
-                    placeholder="Brief description of what you'd like to work on..."></textarea></div>
-            <button class="btn-modal" data-form="booking">Request Appointment</button>
         </div>
     </div>
 
@@ -555,7 +571,7 @@
         <div class="modal">
             <button class="modal-x">✕</button>
             <div class="modal-h">Reserve Your Spot</div>
-            <div class="modal-sub">Mental Recovery & Return to Sport<br>Meets on Mondays<br>$45 per
+            <div class="modal-sub">Mental Recovery & Return to Sport<br>Meets on Tuesdays<br>$45 per
                 session</div>
 
             <form name="workshop-mental-recovery" netlify netlify-honeypot="bot-field" id="mentalForm">
