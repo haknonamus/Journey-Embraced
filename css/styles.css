@@ -984,7 +984,12 @@ body.mob-open nav {
     line-height: 1.85;
     color: var(--mist);
 }
-.bio-body p {
+.bio-body > p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
     margin-bottom: 1.1rem;
 }
 .bio-body p:last-child {
