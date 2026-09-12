@@ -131,8 +131,6 @@
       if (el) {
         el.addEventListener('click', function (e) {
           e.preventDefault();
-          var select = document.getElementById('counselorSelect');
-          if (select) select.value = '';
           openModal('booking');
         });
       }
@@ -143,8 +141,6 @@
       mobBook.addEventListener('click', function (e) {
         e.preventDefault();
         closeMob();
-        var select = document.getElementById('counselorSelect');
-        if (select) select.value = '';
         openModal('booking');
       });
     }
