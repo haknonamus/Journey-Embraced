@@ -152,6 +152,54 @@
     color: var(--ink);
 }
 
+.workshop-contact-callout {
+    margin-top: 32px;
+    background: rgba(180, 79, 212, 0.06);
+    border: 1px solid rgba(180, 79, 212, 0.25);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    max-width: 460px;
+    text-align: left;
+}
+
+.workshop-contact-callout__icon {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0.15rem;
+}
+
+.workshop-contact-callout__text strong {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+}
+
+.workshop-contact-callout__text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--mist);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100%;
+}
+
+.workshop-contact-callout__text a {
+    color: var(--purple);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.workshop-contact-callout__text a:hover {
+    color: var(--purple-light);
+    text-decoration: underline;
+}
+
 /* ── Stay tuned section ── */
 .stay-tuned {
     background: var(--warm);
